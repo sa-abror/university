@@ -1,10 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Labels, controls and groups help people enter information. Try the native browser controls below.">
+  <title>Forms | HTML Review</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="HTML Review home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span><span>HTML<span class="brand-light"> / REVIEW</span></span></a>
+    <div class="header-meta"><span class="lab-label">WEB DEVELOPMENT · LAB 03</span><a class="repository-link" href="https://github.com/sa-abror/university">View repository <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Course navigation">
+      <div class="sidebar-content">
+        <p class="eyebrow">THE CHAPTERS</p>
+        <nav class="chapter-nav" aria-label="Chapters">
+          <a href="index.html"><span class="nav-number">01</span>Home &amp; structure</a>
+          <a href="text.html"><span class="nav-number">02</span>Text formatting</a>
+          <a href="links.html"><span class="nav-number">03</span>Links &amp; images</a>
+          <a href="lists.html"><span class="nav-number">04</span>Lists</a>
+          <a href="tables.html"><span class="nav-number">05</span>Tables</a>
+          <a href="forms.html" aria-current="page"><span class="nav-number">06</span>Forms</a>
+          <a href="media.html"><span class="nav-number">07</span>Multimedia</a>
+          <a href="semantic.html"><span class="nav-number">08</span>Semantic &amp; layout</a>
+          <a href="metadata.html"><span class="nav-number">09</span>Metadata</a>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p>Small tags.<br>Endless possibilities.</p><span>A practical HTML reference.</span></div>
+      </div>
+    </aside>
+    <main id="main-content">
+      <div class="page-intro">
+        <p class="eyebrow"><span class="intro-line" aria-hidden="true"></span>CHAPTER 06 / 09 <span class="intro-category">Forms</span></p>
+        <h1>Make room for input.</h1>
+        <p class="intro-description">Labels, controls and groups help people enter information. Try the native browser controls below.</p>
+        <div class="chapter-facts"><span>11 tag guides</span><span>Code + live examples</span><span>HTML &amp; CSS</span></div>
+      </div>
+      <nav class="on-this-page" aria-label="Tags on this page">
+        <p class="section-label">In this chapter</p>
+        <div class="tag-links">
+          <a href="#tag-form"><code>&lt;form&gt;</code></a>
+          <a href="#tag-label"><code>&lt;label&gt;</code></a>
+          <a href="#tag-input"><code>&lt;input&gt;</code></a>
+          <a href="#tag-button"><code>&lt;button&gt;</code></a>
+          <a href="#tag-textarea"><code>&lt;textarea&gt;</code></a>
+          <a href="#tag-select"><code>&lt;select&gt;</code></a>
+          <a href="#tag-option"><code>&lt;option&gt;</code></a>
+          <a href="#tag-optgroup"><code>&lt;optgroup&gt;</code></a>
+          <a href="#tag-fieldset"><code>&lt;fieldset&gt;</code></a>
+          <a href="#tag-legend"><code>&lt;legend&gt;</code></a>
+          <a href="#tag-datalist"><code>&lt;datalist&gt;</code></a>
+        </div>
+      </nav>
+      <article class="tag-card" id="tag-form">
+        <div class="tag-heading"><h2><code>&lt;form&gt;</code></h2><span class="tag-number">01</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Groups controls used to submit information. The action and method define the submission destination and HTTP method.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;form&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>action</code></td><td>The URL that receives the submitted values.</td></tr>
+              <tr><td><code>method</code></td><td>get puts values in the URL; post sends them in the request body.</td></tr>
+              <tr><td><code>autocomplete</code></td><td>Hints whether the browser may suggest saved values.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-form">Example <span>HTML code</span></h3>
+            <pre><code>&lt;form action="forms.html#tag-form" method="get"&gt;
+  &lt;label for="form-topic"&gt;Choose a topic&lt;/label&gt;
+  &lt;select id="form-topic" name="topic"&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;button type="submit"&gt;Try GET submission&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-form">Result <span>Live preview</span></h3>
+            <div class="demo">
+<form action="forms.html#tag-form" method="get">
+  <label for="form-topic">Choose a topic</label>
+  <select id="form-topic" name="topic">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+  </select>
+  <button type="submit">Try GET submission</button>
+</form>
+            </div>
+          </div>
+        </div>
+        <p class="example-note">Submitting reloads this page with ?topic=html or ?topic=css in the address. This static demonstration has no server processing and stores no form submissions.</p>
+      </article>
 
+      <article class="tag-card" id="tag-label">
+        <div class="tag-heading"><h2><code>&lt;label&gt;</code></h2><span class="tag-number">02</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Gives a form control an accessible name. Clicking the label focuses or toggles its associated control.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;label&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>for</code></td><td>Matches the id of the control it describes.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-label">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="label-name"&gt;Practice name&lt;/label&gt;
+&lt;input id="label-name" type="text" placeholder="Type a sample name"&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-label">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="label-name">Practice name</label>
+<input id="label-name" type="text" placeholder="Type a sample name">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-input">
+        <div class="tag-heading"><h2><code>&lt;input&gt;</code></h2><span class="tag-number">03</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Creates a single control whose type determines its behaviour. It is a void element.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;input&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>type</code></td><td>The control type, such as text, email, number or checkbox.</td></tr>
+              <tr><td><code>name</code></td><td>The key used when submitting the control value.</td></tr>
+              <tr><td><code>value</code></td><td>The initial value, or the submitted value of a checkbox.</td></tr>
+              <tr><td><code>required</code></td><td>Requires a value before its form can be submitted.</td></tr>
+              <tr><td><code>placeholder</code></td><td>A short hint; it does not replace a label.</td></tr>
+              <tr><td><code>min / max</code></td><td>Limits for numeric or date controls.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-input">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="input-email"&gt;Practice email&lt;/label&gt;
+&lt;input id="input-email" name="email" type="email"
+       placeholder="student@example.com" required&gt;
+&lt;label&gt;
+  &lt;input id="input-check" type="checkbox" name="practice" value="yes"&gt;
+  I have tried this example
+&lt;/label&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-input">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="input-email">Practice email</label>
+<input id="input-email" name="email" type="email"
+       placeholder="student@example.com" required>
+<label>
+  <input id="input-check" type="checkbox" name="practice" value="yes">
+  I have tried this example
+</label>
+            </div>
+          </div>
+        </div>
+        <p class="example-note">These individual controls are a local practice example. They do not submit any data.</p>
+      </article>
+
+      <article class="tag-card" id="tag-button">
+        <div class="tag-heading"><h2><code>&lt;button&gt;</code></h2><span class="tag-number">04</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Creates a button. Set its type explicitly inside a form to avoid unintended submission.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;button&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>type</code></td><td>submit sends a form, reset restores initial values, button has no built-in action.</td></tr>
+              <tr><td><code>disabled</code></td><td>Prevents interaction with the button.</td></tr>
+              <tr><td><code>name / value</code></td><td>Included when this button submits its form.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-button">Example <span>HTML code</span></h3>
+            <pre><code>&lt;form action="forms.html#tag-button" method="get"&gt;
+  &lt;label for="reset-topic"&gt;Edit this text, then reset&lt;/label&gt;
+  &lt;input id="reset-topic" type="text" name="topic" value="HTML"&gt;
+  &lt;button type="reset"&gt;Reset example&lt;/button&gt;
+  &lt;button type="submit"&gt;Submit sample topic&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-button">Result <span>Live preview</span></h3>
+            <div class="demo">
+<form action="forms.html#tag-button" method="get">
+  <label for="reset-topic">Edit this text, then reset</label>
+  <input id="reset-topic" type="text" name="topic" value="HTML">
+  <button type="reset">Reset example</button>
+  <button type="submit">Submit sample topic</button>
+</form>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-textarea">
+        <div class="tag-heading"><h2><code>&lt;textarea&gt;</code></h2><span class="tag-number">05</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Provides a multi-line plain-text input. Its initial value is placed between the tags.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;textarea&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>name</code></td><td>The key used for its submitted value.</td></tr>
+              <tr><td><code>rows / cols</code></td><td>The initial visible size in text rows and columns.</td></tr>
+              <tr><td><code>maxlength</code></td><td>The maximum permitted number of characters.</td></tr>
+              <tr><td><code>required</code></td><td>Requires a value before form submission.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-textarea">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="practice-notes"&gt;Practice notes&lt;/label&gt;
+&lt;textarea id="practice-notes" name="notes" rows="4" maxlength="200"&gt;Today I learned about HTML.&lt;/textarea&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-textarea">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="practice-notes">Practice notes</label>
+<textarea id="practice-notes" name="notes" rows="4" maxlength="200">Today I learned about HTML.</textarea>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-select">
+        <div class="tag-heading"><h2><code>&lt;select&gt;</code></h2><span class="tag-number">06</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Offers a set of options for the user to choose from.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;select&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>name</code></td><td>The submitted field name.</td></tr>
+              <tr><td><code>multiple</code></td><td>Allows more than one selected option.</td></tr>
+              <tr><td><code>required</code></td><td>Requires a non-empty selection before submission.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-select">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="select-topic"&gt;Study topic&lt;/label&gt;
+&lt;select id="select-topic" name="topic"&gt;
+  &lt;option value=""&gt;Choose a topic&lt;/option&gt;
+  &lt;option value="html"&gt;HTML&lt;/option&gt;
+  &lt;option value="css"&gt;CSS&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-select">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="select-topic">Study topic</label>
+<select id="select-topic" name="topic">
+  <option value="">Choose a topic</option>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+</select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-option">
+        <div class="tag-heading"><h2><code>&lt;option&gt;</code></h2><span class="tag-number">07</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Defines one choice within a select, optgroup or datalist.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;option&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>value</code></td><td>The value submitted for this choice.</td></tr>
+              <tr><td><code>selected</code></td><td>Selects the option initially in a select.</td></tr>
+              <tr><td><code>disabled</code></td><td>Makes this option unavailable.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-option">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="option-level"&gt;Level&lt;/label&gt;
+&lt;select id="option-level" name="level"&gt;
+  &lt;option value="beginner" selected&gt;Beginner&lt;/option&gt;
+  &lt;option value="advanced"&gt;Advanced&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-option">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="option-level">Level</label>
+<select id="option-level" name="level">
+  <option value="beginner" selected>Beginner</option>
+  <option value="advanced">Advanced</option>
+</select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-optgroup">
+        <div class="tag-heading"><h2><code>&lt;optgroup&gt;</code></h2><span class="tag-number">08</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Groups related options inside a select element.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;optgroup&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>label</code></td><td>The visible name of the group.</td></tr>
+              <tr><td><code>disabled</code></td><td>Disables all options in the group.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-optgroup">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="group-topic"&gt;Course&lt;/label&gt;
+&lt;select id="group-topic" name="course"&gt;
+  &lt;optgroup label="Frontend"&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="Backend"&gt;
+    &lt;option value="python"&gt;Python&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-optgroup">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="group-topic">Course</label>
+<select id="group-topic" name="course">
+  <optgroup label="Frontend">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+  </optgroup>
+  <optgroup label="Backend">
+    <option value="python">Python</option>
+  </optgroup>
+</select>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-fieldset">
+        <div class="tag-heading"><h2><code>&lt;fieldset&gt;</code></h2><span class="tag-number">09</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Groups related controls and their labels. A legend names the group.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;fieldset&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>disabled</code></td><td>Disables descendant controls, except those inside the first legend.</td></tr>
+              <tr><td><code>form</code></td><td>Associates the group with a form by its id.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-fieldset">Example <span>HTML code</span></h3>
+            <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Study preference&lt;/legend&gt;
+  &lt;label&gt;&lt;input type="radio" name="study-mode" value="solo" checked&gt; Solo&lt;/label&gt;
+  &lt;label&gt;&lt;input type="radio" name="study-mode" value="pair"&gt; In a pair&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-fieldset">Result <span>Live preview</span></h3>
+            <div class="demo">
+<fieldset>
+  <legend>Study preference</legend>
+  <label><input type="radio" name="study-mode" value="solo" checked> Solo</label>
+  <label><input type="radio" name="study-mode" value="pair"> In a pair</label>
+</fieldset>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-legend">
+        <div class="tag-heading"><h2><code>&lt;legend&gt;</code></h2><span class="tag-number">10</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Provides the caption for a fieldset. Place it as the first child of that fieldset.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;legend&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-legend">Example <span>HTML code</span></h3>
+            <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Favourite topics&lt;/legend&gt;
+  &lt;label&gt;&lt;input type="checkbox" name="favourite-html" value="yes"&gt; HTML&lt;/label&gt;
+  &lt;label&gt;&lt;input type="checkbox" name="favourite-css" value="yes"&gt; CSS&lt;/label&gt;
+&lt;/fieldset&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-legend">Result <span>Live preview</span></h3>
+            <div class="demo">
+<fieldset>
+  <legend>Favourite topics</legend>
+  <label><input type="checkbox" name="favourite-html" value="yes"> HTML</label>
+  <label><input type="checkbox" name="favourite-css" value="yes"> CSS</label>
+</fieldset>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-datalist">
+        <div class="tag-heading"><h2><code>&lt;datalist&gt;</code></h2><span class="tag-number">11</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Supplies suggested values to an input. Users can still enter a different value.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;datalist&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>Must match the associated input’s list attribute.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-datalist">Example <span>HTML code</span></h3>
+            <pre><code>&lt;label for="browser-input"&gt;Browser&lt;/label&gt;
+&lt;input id="browser-input" type="text" name="browser" list="browser-options"&gt;
+&lt;datalist id="browser-options"&gt;
+  &lt;option value="Chrome"&gt;&lt;/option&gt;
+  &lt;option value="Firefox"&gt;&lt;/option&gt;
+  &lt;option value="Safari"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-datalist">Result <span>Live preview</span></h3>
+            <div class="demo">
+<label for="browser-input">Browser</label>
+<input id="browser-input" type="text" name="browser" list="browser-options">
+<datalist id="browser-options">
+  <option value="Chrome"></option>
+  <option value="Firefox"></option>
+  <option value="Safari"></option>
+</datalist>
+            </div>
+          </div>
+        </div>
+      </article>
+      <nav class="chapter-pager" aria-label="Previous and next chapters"><a href="tables.html"><span>← Previous chapter</span>Tables</a><a href="media.html"><span>Next chapter →</span>Multimedia</a></nav>
+    </main>
+  </div>
+  <footer class="site-footer"><p><strong>HTML / REVIEW</strong><span>Lab Work 3 · University web development</span></p><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>

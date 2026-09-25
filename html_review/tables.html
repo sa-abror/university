@@ -1,10 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Describe relationships between rows and columns with accessible headings and a clear caption.">
+  <title>Tables | HTML Review</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="HTML Review home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span><span>HTML<span class="brand-light"> / REVIEW</span></span></a>
+    <div class="header-meta"><span class="lab-label">WEB DEVELOPMENT · LAB 03</span><a class="repository-link" href="https://github.com/sa-abror/university">View repository <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Course navigation">
+      <div class="sidebar-content">
+        <p class="eyebrow">THE CHAPTERS</p>
+        <nav class="chapter-nav" aria-label="Chapters">
+          <a href="index.html"><span class="nav-number">01</span>Home &amp; structure</a>
+          <a href="text.html"><span class="nav-number">02</span>Text formatting</a>
+          <a href="links.html"><span class="nav-number">03</span>Links &amp; images</a>
+          <a href="lists.html"><span class="nav-number">04</span>Lists</a>
+          <a href="tables.html" aria-current="page"><span class="nav-number">05</span>Tables</a>
+          <a href="forms.html"><span class="nav-number">06</span>Forms</a>
+          <a href="media.html"><span class="nav-number">07</span>Multimedia</a>
+          <a href="semantic.html"><span class="nav-number">08</span>Semantic &amp; layout</a>
+          <a href="metadata.html"><span class="nav-number">09</span>Metadata</a>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p>Small tags.<br>Endless possibilities.</p><span>A practical HTML reference.</span></div>
+      </div>
+    </aside>
+    <main id="main-content">
+      <div class="page-intro">
+        <p class="eyebrow"><span class="intro-line" aria-hidden="true"></span>CHAPTER 05 / 09 <span class="intro-category">Tables</span></p>
+        <h1>Make data readable.</h1>
+        <p class="intro-description">Describe relationships between rows and columns with accessible headings and a clear caption.</p>
+        <div class="chapter-facts"><span>8 tag guides</span><span>Code + live examples</span><span>HTML &amp; CSS</span></div>
+      </div>
+      <nav class="on-this-page" aria-label="Tags on this page">
+        <p class="section-label">In this chapter</p>
+        <div class="tag-links">
+          <a href="#tag-table"><code>&lt;table&gt;</code></a>
+          <a href="#tag-caption"><code>&lt;caption&gt;</code></a>
+          <a href="#tag-thead"><code>&lt;thead&gt;</code></a>
+          <a href="#tag-tbody"><code>&lt;tbody&gt;</code></a>
+          <a href="#tag-tfoot"><code>&lt;tfoot&gt;</code></a>
+          <a href="#tag-tr"><code>&lt;tr&gt;</code></a>
+          <a href="#tag-th"><code>&lt;th&gt;</code></a>
+          <a href="#tag-td"><code>&lt;td&gt;</code></a>
+        </div>
+      </nav>
+      <article class="tag-card" id="tag-table">
+        <div class="tag-heading"><h2><code>&lt;table&gt;</code></h2><span class="tag-number">01</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Organizes tabular data into rows and columns. Use CSS, rather than a table, to lay out a page.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;table&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-table">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Study plan&lt;/caption&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;&lt;th scope="col"&gt;Topic&lt;/th&gt;&lt;th scope="col"&gt;Day&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;Monday&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;Tuesday&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-table">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Study plan</caption>
+  <tbody>
+  <tr><th scope="col">Topic</th><th scope="col">Day</th></tr>
+  <tr><td>HTML</td><td>Monday</td></tr>
+  <tr><td>CSS</td><td>Tuesday</td></tr>
+  </tbody>
+</table>
+            </div>
+          </div>
+        </div>
+        <p class="example-note">Borders, spacing and colours come from css/style.css. Presentational attributes such as border are obsolete.</p>
+      </article>
 
+      <article class="tag-card" id="tag-caption">
+        <div class="tag-heading"><h2><code>&lt;caption&gt;</code></h2><span class="tag-number">02</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Gives a table its title or explanation. It is the first child of the table element.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;caption&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-caption">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Available courses&lt;/caption&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;&lt;th scope="col"&gt;Course&lt;/th&gt;&lt;th scope="col"&gt;Places&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Web development&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-caption">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Available courses</caption>
+  <tbody>
+  <tr><th scope="col">Course</th><th scope="col">Places</th></tr>
+  <tr><td>Web development</td><td>20</td></tr>
+  </tbody>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-thead">
+        <div class="tag-heading"><h2><code>&lt;thead&gt;</code></h2><span class="tag-number">03</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Groups the header rows of a table. Use th elements for the actual header cells.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;thead&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-thead">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Modules&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th scope="col"&gt;Module&lt;/th&gt;&lt;th scope="col"&gt;Hours&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-thead">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Modules</caption>
+  <thead>
+    <tr><th scope="col">Module</th><th scope="col">Hours</th></tr>
+  </thead>
+  <tbody><tr><td>HTML</td><td>4</td></tr></tbody>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-tbody">
+        <div class="tag-heading"><h2><code>&lt;tbody&gt;</code></h2><span class="tag-number">04</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Groups the main data rows of a table.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;tbody&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-tbody">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Practice sessions&lt;/caption&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Day&lt;/th&gt;&lt;th scope="col"&gt;Topic&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Monday&lt;/td&gt;&lt;td&gt;Forms&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Tuesday&lt;/td&gt;&lt;td&gt;Tables&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-tbody">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Practice sessions</caption>
+  <thead><tr><th scope="col">Day</th><th scope="col">Topic</th></tr></thead>
+  <tbody>
+    <tr><td>Monday</td><td>Forms</td></tr>
+    <tr><td>Tuesday</td><td>Tables</td></tr>
+  </tbody>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-tfoot">
+        <div class="tag-heading"><h2><code>&lt;tfoot&gt;</code></h2><span class="tag-number">05</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Groups summary or total rows after the table body.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;tfoot&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-tfoot">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Study hours&lt;/caption&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Topic&lt;/th&gt;&lt;th scope="col"&gt;Hours&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+  &lt;tfoot&gt;&lt;tr&gt;&lt;th scope="row"&gt;Total&lt;/th&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-tfoot">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Study hours</caption>
+  <thead><tr><th scope="col">Topic</th><th scope="col">Hours</th></tr></thead>
+  <tbody><tr><td>HTML</td><td>4</td></tr></tbody>
+  <tfoot><tr><th scope="row">Total</th><td>4</td></tr></tfoot>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-tr">
+        <div class="tag-heading"><h2><code>&lt;tr&gt;</code></h2><span class="tag-number">06</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Defines a row containing header cells, data cells or both.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;tr&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-tr">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Progress&lt;/caption&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;&lt;th scope="col"&gt;Chapter&lt;/th&gt;&lt;th scope="col"&gt;Status&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Structure&lt;/td&gt;&lt;td&gt;Complete&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-tr">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Progress</caption>
+  <tbody>
+  <tr><th scope="col">Chapter</th><th scope="col">Status</th></tr>
+  <tr><td>Structure</td><td>Complete</td></tr>
+  </tbody>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-th">
+        <div class="tag-heading"><h2><code>&lt;th&gt;</code></h2><span class="tag-number">07</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Defines a header cell that describes other cells in its row or column.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;th&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>scope</code></td><td>Identifies the related cells: row, col, rowgroup or colgroup.</td></tr>
+              <tr><td><code>colspan / rowspan</code></td><td>The number of columns or rows covered by the cell.</td></tr>
+              <tr><td><code>id</code></td><td>An identifier that complex data cells can reference with headers.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-th">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;HTML lesson&lt;/caption&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;&lt;th scope="col"&gt;Topic&lt;/th&gt;&lt;th scope="col"&gt;Level&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;th scope="row"&gt;HTML&lt;/th&gt;&lt;td&gt;Beginner&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-th">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>HTML lesson</caption>
+  <tbody>
+  <tr><th scope="col">Topic</th><th scope="col">Level</th></tr>
+  <tr><th scope="row">HTML</th><td>Beginner</td></tr>
+  </tbody>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-td">
+        <div class="tag-heading"><h2><code>&lt;td&gt;</code></h2><span class="tag-number">08</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Contains one data value in a table row.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;td&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>colspan</code></td><td>How many columns the cell spans.</td></tr>
+              <tr><td><code>rowspan</code></td><td>How many rows the cell spans.</td></tr>
+              <tr><td><code>headers</code></td><td>IDs of the header cells associated with this cell.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-td">Example <span>HTML code</span></h3>
+            <pre><code>&lt;table&gt;
+  &lt;caption&gt;Weekly schedule&lt;/caption&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;&lt;th scope="col"&gt;Monday&lt;/th&gt;&lt;th scope="col"&gt;Tuesday&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td colspan="2"&gt;HTML workshop&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-td">Result <span>Live preview</span></h3>
+            <div class="demo">
+<table>
+  <caption>Weekly schedule</caption>
+  <tbody>
+  <tr><th scope="col">Monday</th><th scope="col">Tuesday</th></tr>
+  <tr><td colspan="2">HTML workshop</td></tr>
+  </tbody>
+</table>
+            </div>
+          </div>
+        </div>
+      </article>
+      <nav class="chapter-pager" aria-label="Previous and next chapters"><a href="lists.html"><span>← Previous chapter</span>Lists</a><a href="forms.html"><span>Next chapter →</span>Forms</a></nav>
+    </main>
+  </div>
+  <footer class="site-footer"><p><strong>HTML / REVIEW</strong><span>Lab Work 3 · University web development</span></p><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>

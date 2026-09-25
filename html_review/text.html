@@ -1,10 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Headings, paragraphs, emphasis and quotations turn plain text into readable, meaningful content.">
+  <title>Text formatting | HTML Review</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="HTML Review home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span><span>HTML<span class="brand-light"> / REVIEW</span></span></a>
+    <div class="header-meta"><span class="lab-label">WEB DEVELOPMENT · LAB 03</span><a class="repository-link" href="https://github.com/sa-abror/university">View repository <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Course navigation">
+      <div class="sidebar-content">
+        <p class="eyebrow">THE CHAPTERS</p>
+        <nav class="chapter-nav" aria-label="Chapters">
+          <a href="index.html"><span class="nav-number">01</span>Home &amp; structure</a>
+          <a href="text.html" aria-current="page"><span class="nav-number">02</span>Text formatting</a>
+          <a href="links.html"><span class="nav-number">03</span>Links &amp; images</a>
+          <a href="lists.html"><span class="nav-number">04</span>Lists</a>
+          <a href="tables.html"><span class="nav-number">05</span>Tables</a>
+          <a href="forms.html"><span class="nav-number">06</span>Forms</a>
+          <a href="media.html"><span class="nav-number">07</span>Multimedia</a>
+          <a href="semantic.html"><span class="nav-number">08</span>Semantic &amp; layout</a>
+          <a href="metadata.html"><span class="nav-number">09</span>Metadata</a>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p>Small tags.<br>Endless possibilities.</p><span>A practical HTML reference.</span></div>
+      </div>
+    </aside>
+    <main id="main-content">
+      <div class="page-intro">
+        <p class="eyebrow"><span class="intro-line" aria-hidden="true"></span>CHAPTER 02 / 09 <span class="intro-category">Text formatting</span></p>
+        <h1>Give your words meaning.</h1>
+        <p class="intro-description">Headings, paragraphs, emphasis and quotations turn plain text into readable, meaningful content.</p>
+        <div class="chapter-facts"><span>29 tag guides</span><span>Code + live examples</span><span>HTML &amp; CSS</span></div>
+      </div>
+      <nav class="on-this-page" aria-label="Tags on this page">
+        <p class="section-label">In this chapter</p>
+        <div class="tag-links">
+          <a href="#tag-h1"><code>&lt;h1&gt;</code></a>
+          <a href="#tag-h2"><code>&lt;h2&gt;</code></a>
+          <a href="#tag-h3"><code>&lt;h3&gt;</code></a>
+          <a href="#tag-h4"><code>&lt;h4&gt;</code></a>
+          <a href="#tag-h5"><code>&lt;h5&gt;</code></a>
+          <a href="#tag-h6"><code>&lt;h6&gt;</code></a>
+          <a href="#tag-p"><code>&lt;p&gt;</code></a>
+          <a href="#tag-br"><code>&lt;br&gt;</code></a>
+          <a href="#tag-hr"><code>&lt;hr&gt;</code></a>
+          <a href="#tag-strong"><code>&lt;strong&gt;</code></a>
+          <a href="#tag-em"><code>&lt;em&gt;</code></a>
+          <a href="#tag-b"><code>&lt;b&gt;</code></a>
+          <a href="#tag-i"><code>&lt;i&gt;</code></a>
+          <a href="#tag-u"><code>&lt;u&gt;</code></a>
+          <a href="#tag-s"><code>&lt;s&gt;</code></a>
+          <a href="#tag-mark"><code>&lt;mark&gt;</code></a>
+          <a href="#tag-small"><code>&lt;small&gt;</code></a>
+          <a href="#tag-sub"><code>&lt;sub&gt;</code></a>
+          <a href="#tag-sup"><code>&lt;sup&gt;</code></a>
+          <a href="#tag-del"><code>&lt;del&gt;</code></a>
+          <a href="#tag-ins"><code>&lt;ins&gt;</code></a>
+          <a href="#tag-blockquote"><code>&lt;blockquote&gt;</code></a>
+          <a href="#tag-q"><code>&lt;q&gt;</code></a>
+          <a href="#tag-abbr"><code>&lt;abbr&gt;</code></a>
+          <a href="#tag-cite"><code>&lt;cite&gt;</code></a>
+          <a href="#tag-code"><code>&lt;code&gt;</code></a>
+          <a href="#tag-pre"><code>&lt;pre&gt;</code></a>
+          <a href="#tag-kbd"><code>&lt;kbd&gt;</code></a>
+          <a href="#tag-time"><code>&lt;time&gt;</code></a>
+        </div>
+      </nav>
+      <article class="tag-card" id="tag-h1">
+        <div class="tag-heading"><h2><code>&lt;h1&gt;</code></h2><span class="tag-number">01</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">A level-1 heading describes the topic of a section. Heading levels express a hierarchy; choose a level for its meaning, not its visual size.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;h1&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-h1">Example <span>HTML code</span></h3>
+            <pre><code>&lt;h1&gt;Level 1: HTML review&lt;/h1&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-h1">Result <span>Live preview</span></h3>
+            <div class="demo">
+<h1>Level 1: HTML review</h1>
+            </div>
+          </div>
+        </div>
+      </article>
 
+      <article class="tag-card" id="tag-h2">
+        <div class="tag-heading"><h2><code>&lt;h2&gt;</code></h2><span class="tag-number">02</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">A level-2 heading describes the topic of a section. Heading levels express a hierarchy; choose a level for its meaning, not its visual size.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;h2&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-h2">Example <span>HTML code</span></h3>
+            <pre><code>&lt;h2&gt;Level 2: HTML review&lt;/h2&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-h2">Result <span>Live preview</span></h3>
+            <div class="demo">
+<h2>Level 2: HTML review</h2>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-h3">
+        <div class="tag-heading"><h2><code>&lt;h3&gt;</code></h2><span class="tag-number">03</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">A level-3 heading describes the topic of a section. Heading levels express a hierarchy; choose a level for its meaning, not its visual size.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;h3&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-h3">Example <span>HTML code</span></h3>
+            <pre><code>&lt;h3&gt;Level 3: HTML review&lt;/h3&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-h3">Result <span>Live preview</span></h3>
+            <div class="demo">
+<h3>Level 3: HTML review</h3>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-h4">
+        <div class="tag-heading"><h2><code>&lt;h4&gt;</code></h2><span class="tag-number">04</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">A level-4 heading describes the topic of a section. Heading levels express a hierarchy; choose a level for its meaning, not its visual size.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;h4&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-h4">Example <span>HTML code</span></h3>
+            <pre><code>&lt;h4&gt;Level 4: HTML review&lt;/h4&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-h4">Result <span>Live preview</span></h3>
+            <div class="demo">
+<h4>Level 4: HTML review</h4>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-h5">
+        <div class="tag-heading"><h2><code>&lt;h5&gt;</code></h2><span class="tag-number">05</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">A level-5 heading describes the topic of a section. Heading levels express a hierarchy; choose a level for its meaning, not its visual size.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;h5&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-h5">Example <span>HTML code</span></h3>
+            <pre><code>&lt;h5&gt;Level 5: HTML review&lt;/h5&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-h5">Result <span>Live preview</span></h3>
+            <div class="demo">
+<h5>Level 5: HTML review</h5>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-h6">
+        <div class="tag-heading"><h2><code>&lt;h6&gt;</code></h2><span class="tag-number">06</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">A level-6 heading describes the topic of a section. Heading levels express a hierarchy; choose a level for its meaning, not its visual size.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;h6&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-h6">Example <span>HTML code</span></h3>
+            <pre><code>&lt;h6&gt;Level 6: HTML review&lt;/h6&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-h6">Result <span>Live preview</span></h3>
+            <div class="demo">
+<h6>Level 6: HTML review</h6>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-p">
+        <div class="tag-heading"><h2><code>&lt;p&gt;</code></h2><span class="tag-number">07</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents a paragraph of text. Use separate paragraphs for separate ideas.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;p&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-p">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;HTML describes the structure of a web page.&lt;/p&gt;
+&lt;p&gt;CSS controls its presentation.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-p">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>HTML describes the structure of a web page.</p>
+<p>CSS controls its presentation.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-br">
+        <div class="tag-heading"><h2><code>&lt;br&gt;</code></h2><span class="tag-number">08</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Inserts a line break within text, for example in an address or poem. This void element has no closing tag.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;br&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-br">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;HTML Review&lt;br&gt;Web Development Lab&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-br">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>HTML Review<br>Web Development Lab</p>
+            </div>
+          </div>
+        </div>
+        <p class="example-note">Use CSS margins for spacing between blocks; reserve br for meaningful line breaks.</p>
+      </article>
+
+      <article class="tag-card" id="tag-hr">
+        <div class="tag-heading"><h2><code>&lt;hr&gt;</code></h2><span class="tag-number">09</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Marks a thematic break between topics. Browsers usually display it as a horizontal rule.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;hr&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-hr">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;End of the introduction.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A new topic begins.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-hr">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>End of the introduction.</p>
+<hr>
+<p>A new topic begins.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-strong">
+        <div class="tag-heading"><h2><code>&lt;strong&gt;</code></h2><span class="tag-number">10</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Marks content with strong importance, seriousness or urgency. Browsers usually render it in bold.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;strong&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-strong">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;&lt;strong&gt;Save your work&lt;/strong&gt; before closing the editor.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-strong">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p><strong>Save your work</strong> before closing the editor.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-em">
+        <div class="tag-heading"><h2><code>&lt;em&gt;</code></h2><span class="tag-number">11</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Adds stress emphasis to words, which can change the meaning of a sentence. Browsers usually render it in italics.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;em&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-em">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;I &lt;em&gt;really&lt;/em&gt; enjoy learning HTML.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-em">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>I <em>really</em> enjoy learning HTML.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-b">
+        <div class="tag-heading"><h2><code>&lt;b&gt;</code></h2><span class="tag-number">12</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Draws attention to text without adding importance, such as a keyword in a summary.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;b&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-b">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Key terms: &lt;b&gt;element&lt;/b&gt;, &lt;b&gt;attribute&lt;/b&gt;, &lt;b&gt;content&lt;/b&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-b">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Key terms: <b>element</b>, <b>attribute</b>, <b>content</b>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-i">
+        <div class="tag-heading"><h2><code>&lt;i&gt;</code></h2><span class="tag-number">13</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Marks text in an alternate voice or mood, such as a technical term or a phrase in another language.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;i&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>lang</code></td><td>Identifies a change in language.</td></tr>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-i">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;&lt;i lang="la"&gt;Carpe diem&lt;/i&gt; means seize the day.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-i">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p><i lang="la">Carpe diem</i> means seize the day.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-u">
+        <div class="tag-heading"><h2><code>&lt;u&gt;</code></h2><span class="tag-number">14</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Marks a non-textual annotation, such as a spelling error. It is not a general-purpose decoration element.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;u&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-u">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Spelling to check: &lt;u&gt;atribute&lt;/u&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-u">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Spelling to check: <u>atribute</u>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-s">
+        <div class="tag-heading"><h2><code>&lt;s&gt;</code></h2><span class="tag-number">15</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Marks text that is no longer accurate or relevant. Use del for a documented edit.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;s&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-s">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;&lt;s&gt;The library closes at 5 pm.&lt;/s&gt; Today it closes at 6 pm.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-s">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p><s>The library closes at 5 pm.</s> Today it closes at 6 pm.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-mark">
+        <div class="tag-heading"><h2><code>&lt;mark&gt;</code></h2><span class="tag-number">16</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Highlights a passage because it is relevant in the current context, such as a search result.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;mark&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-mark">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Search result: The &lt;mark&gt;HTML&lt;/mark&gt; reference guide.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-mark">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Search result: The <mark>HTML</mark> reference guide.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-small">
+        <div class="tag-heading"><h2><code>&lt;small&gt;</code></h2><span class="tag-number">17</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents side comments or small print, such as a copyright notice.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;small&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-small">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;&lt;small&gt;Created for a university HTML exercise.&lt;/small&gt;&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-small">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p><small>Created for a university HTML exercise.</small></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-sub">
+        <div class="tag-heading"><h2><code>&lt;sub&gt;</code></h2><span class="tag-number">18</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents subscript text when the lower position has meaning, such as a chemical formula.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;sub&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-sub">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Water: H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-sub">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Water: H<sub>2</sub>O.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-sup">
+        <div class="tag-heading"><h2><code>&lt;sup&gt;</code></h2><span class="tag-number">19</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents superscript text, such as an exponent or a footnote marker.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;sup&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-sup">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Area of a square: a&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-sup">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Area of a square: a<sup>2</sup>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-del">
+        <div class="tag-heading"><h2><code>&lt;del&gt;</code></h2><span class="tag-number">20</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Records text removed from a document.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;del&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>datetime</code></td><td>When the deletion was made, in a machine-readable date/time format.</td></tr>
+              <tr><td><code>cite</code></td><td>A URL explaining the change.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-del">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Meeting day: &lt;del datetime="2026-09-25"&gt;Monday&lt;/del&gt; Tuesday.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-del">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Meeting day: <del datetime="2026-09-25">Monday</del> Tuesday.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-ins">
+        <div class="tag-heading"><h2><code>&lt;ins&gt;</code></h2><span class="tag-number">21</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Records text added to a document.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;ins&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>datetime</code></td><td>When the insertion was made.</td></tr>
+              <tr><td><code>cite</code></td><td>A URL explaining the change.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-ins">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Bring your laptop &lt;ins datetime="2026-09-25"&gt;and charger&lt;/ins&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-ins">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Bring your laptop <ins datetime="2026-09-25">and charger</ins>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-blockquote">
+        <div class="tag-heading"><h2><code>&lt;blockquote&gt;</code></h2><span class="tag-number">22</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Contains an extended quotation from another source. Place the attribution outside the quotation.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;blockquote&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>cite</code></td><td>The URL of the quoted source; this attribute does not display an attribution.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-blockquote">Example <span>HTML code</span></h3>
+            <pre><code>&lt;blockquote cite="https://www.w3.org/mission/"&gt;
+  &lt;p&gt;The power of the Web is in its universality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;— Tim Berners-Lee&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-blockquote">Result <span>Live preview</span></h3>
+            <div class="demo">
+<blockquote cite="https://www.w3.org/mission/">
+  <p>The power of the Web is in its universality.</p>
+</blockquote>
+<p>— Tim Berners-Lee</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-q">
+        <div class="tag-heading"><h2><code>&lt;q&gt;</code></h2><span class="tag-number">23</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents a short inline quotation. The browser supplies quotation marks.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;q&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>cite</code></td><td>The source URL for the quotation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-q">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Our fictional tutor says, &lt;q&gt;Try the example yourself.&lt;/q&gt;&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-q">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Our fictional tutor says, <q>Try the example yourself.</q></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-abbr">
+        <div class="tag-heading"><h2><code>&lt;abbr&gt;</code></h2><span class="tag-number">24</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents an abbreviation. An optional title supplies its full expansion.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;abbr&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>title</code></td><td>The full form of the abbreviation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-abbr">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; structures a page.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-abbr">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p><abbr title="HyperText Markup Language">HTML</abbr> structures a page.</p>
+            </div>
+          </div>
+        </div>
+        <p class="example-note">The title may appear on hover. Also explain abbreviations in visible text when readers need the expansion.</p>
+      </article>
+
+      <article class="tag-card" id="tag-cite">
+        <div class="tag-heading"><h2><code>&lt;cite&gt;</code></h2><span class="tag-number">25</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Identifies the title of a creative work, such as a book, article or website.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;cite&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-cite">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Our class guide is called &lt;cite&gt;HTML Review&lt;/cite&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-cite">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Our class guide is called <cite>HTML Review</cite>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-code">
+        <div class="tag-heading"><h2><code>&lt;code&gt;</code></h2><span class="tag-number">26</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Marks a fragment of computer code. Use pre as a parent when line breaks and indentation matter.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;code&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-code">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;A paragraph begins with &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-code">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>A paragraph begins with <code>&lt;p&gt;</code>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-pre">
+        <div class="tag-heading"><h2><code>&lt;pre&gt;</code></h2><span class="tag-number">27</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Preserves whitespace and line breaks. It is often combined with code to display formatted source code.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;pre&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-pre">Example <span>HTML code</span></h3>
+            <pre><code>&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Welcome.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-pre">Result <span>Live preview</span></h3>
+            <div class="demo">
+<pre><code>&lt;h1&gt;Hello&lt;/h1&gt;
+&lt;p&gt;Welcome.&lt;/p&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-kbd">
+        <div class="tag-heading"><h2><code>&lt;kbd&gt;</code></h2><span class="tag-number">28</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents input from a user, often a keyboard shortcut.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;kbd&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
+              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-kbd">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; to save on Windows.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-kbd">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save on Windows.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-time">
+        <div class="tag-heading"><h2><code>&lt;time&gt;</code></h2><span class="tag-number">29</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Represents a date, time or duration. The datetime attribute provides a machine-readable value.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;time&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>datetime</code></td><td>A valid date, time or duration matching the visible content.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-time">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;Lab date: &lt;time datetime="2026-09-25"&gt;25 September 2026&lt;/time&gt;.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-time">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p>Lab date: <time datetime="2026-09-25">25 September 2026</time>.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <nav class="chapter-pager" aria-label="Previous and next chapters"><a href="index.html"><span>← Previous chapter</span>Home &amp; structure</a><a href="links.html"><span>Next chapter →</span>Links &amp; images</a></nav>
+    </main>
+  </div>
+  <footer class="site-footer"><p><strong>HTML / REVIEW</strong><span>Lab Work 3 · University web development</span></p><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>

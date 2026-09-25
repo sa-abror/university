@@ -1,10 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Move between pages, display an image, and link to or embed local audio and video.">
+  <title>Links &amp; images | HTML Review</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="HTML Review home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span><span>HTML<span class="brand-light"> / REVIEW</span></span></a>
+    <div class="header-meta"><span class="lab-label">WEB DEVELOPMENT · LAB 03</span><a class="repository-link" href="https://github.com/sa-abror/university">View repository <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Course navigation">
+      <div class="sidebar-content">
+        <p class="eyebrow">THE CHAPTERS</p>
+        <nav class="chapter-nav" aria-label="Chapters">
+          <a href="index.html"><span class="nav-number">01</span>Home &amp; structure</a>
+          <a href="text.html"><span class="nav-number">02</span>Text formatting</a>
+          <a href="links.html" aria-current="page"><span class="nav-number">03</span>Links &amp; images</a>
+          <a href="lists.html"><span class="nav-number">04</span>Lists</a>
+          <a href="tables.html"><span class="nav-number">05</span>Tables</a>
+          <a href="forms.html"><span class="nav-number">06</span>Forms</a>
+          <a href="media.html"><span class="nav-number">07</span>Multimedia</a>
+          <a href="semantic.html"><span class="nav-number">08</span>Semantic &amp; layout</a>
+          <a href="metadata.html"><span class="nav-number">09</span>Metadata</a>
+        </nav>
+        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p>Small tags.<br>Endless possibilities.</p><span>A practical HTML reference.</span></div>
+      </div>
+    </aside>
+    <main id="main-content">
+      <div class="page-intro">
+        <p class="eyebrow"><span class="intro-line" aria-hidden="true"></span>CHAPTER 03 / 09 <span class="intro-category">Links &amp; images</span></p>
+        <h1>Connect the pieces.</h1>
+        <p class="intro-description">Move between pages, display an image, and link to or embed local audio and video.</p>
+        <div class="chapter-facts"><span>4 tag guides</span><span>Code + live examples</span><span>HTML &amp; CSS</span></div>
+      </div>
+      <nav class="on-this-page" aria-label="Tags on this page">
+        <p class="section-label">In this chapter</p>
+        <div class="tag-links">
+          <a href="#tag-a"><code>&lt;a&gt;</code></a>
+          <a href="#tag-img"><code>&lt;img&gt;</code></a>
+          <a href="#tag-audio"><code>&lt;audio&gt;</code></a>
+          <a href="#tag-video"><code>&lt;video&gt;</code></a>
+        </div>
+      </nav>
+      <article class="tag-card" id="tag-a">
+        <div class="tag-heading"><h2><code>&lt;a&gt;</code></h2><span class="tag-number">01</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Creates a hyperlink to another page, a location in a page, or a file. Link text should describe the destination.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;a&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>href</code></td><td>The destination URL or fragment identifier.</td></tr>
+              <tr><td><code>target</code></td><td>Where to open the destination, such as _blank for a new tab.</td></tr>
+              <tr><td><code>rel</code></td><td>The relationship to the destination; noopener protects a new tab.</td></tr>
+              <tr><td><code>download</code></td><td>Requests a download for a same-origin resource.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-a">Example <span>HTML code</span></h3>
+            <pre><code>&lt;p&gt;&lt;a href="semantic.html"&gt;Explore semantic HTML&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#tag-img"&gt;Jump to the image example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="images/chime.wav" download&gt;Download the audio sample&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="images/html-demo.webm"&gt;Open the video sample&lt;/a&gt;&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-a">Result <span>Live preview</span></h3>
+            <div class="demo">
+<p><a href="semantic.html">Explore semantic HTML</a></p>
+<p><a href="#tag-img">Jump to the image example</a></p>
+<p><a href="images/chime.wav" download>Download the audio sample</a></p>
+<p><a href="images/html-demo.webm">Open the video sample</a></p>
+            </div>
+          </div>
+        </div>
+      </article>
 
+      <article class="tag-card" id="tag-img">
+        <div class="tag-heading"><h2><code>&lt;img&gt;</code></h2><span class="tag-number">02</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Embeds an image in the document. Meaningful alternative text describes its content when it cannot be seen.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;img&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>src</code></td><td>The image file URL.</td></tr>
+              <tr><td><code>alt</code></td><td>A text alternative; use an empty value for a purely decorative image.</td></tr>
+              <tr><td><code>width / height</code></td><td>Intrinsic dimensions in CSS pixels, used to reserve space.</td></tr>
+              <tr><td><code>loading</code></td><td>lazy defers loading until the image approaches the viewport.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-img">Example <span>HTML code</span></h3>
+            <pre><code>&lt;img src="images/study-desk.svg"
+     alt="A book, a plant and a laptop displaying HTML on a study desk"
+     width="640" height="400" loading="lazy"&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-img">Result <span>Live preview</span></h3>
+            <div class="demo">
+<img src="images/study-desk.svg"
+     alt="A book, a plant and a laptop displaying HTML on a study desk"
+     width="640" height="400" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-audio">
+        <div class="tag-heading"><h2><code>&lt;audio&gt;</code></h2><span class="tag-number">03</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Embeds an audio player. A local file can be played in the page or linked for download.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;audio&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>src</code></td><td>The audio file URL.</td></tr>
+              <tr><td><code>controls</code></td><td>Shows the browser playback controls.</td></tr>
+              <tr><td><code>preload</code></td><td>A loading hint: none, metadata or auto.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-audio">Example <span>HTML code</span></h3>
+            <pre><code>&lt;audio controls preload="metadata" src="images/chime.wav"&gt;
+  &lt;a href="images/chime.wav"&gt;Download the audio&lt;/a&gt;
+&lt;/audio&gt;
+&lt;p&gt;Audio description: three short, ascending chime notes.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-audio">Result <span>Live preview</span></h3>
+            <div class="demo">
+<audio controls preload="metadata" src="images/chime.wav">
+  <a href="images/chime.wav">Download the audio</a>
+</audio>
+<p>Audio description: three short, ascending chime notes.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tag-card" id="tag-video">
+        <div class="tag-heading"><h2><code>&lt;video&gt;</code></h2><span class="tag-number">04</span></div>
+        <h3 class="section-label">Definition</h3>
+        <p class="definition">Embeds a video player. Supply controls so the user can choose when to play it.</p>
+        <h3 class="section-label">Attributes</h3>
+        <div class="table-scroll">
+          <table class="attributes">
+            <caption class="visually-hidden">Attributes of &lt;video&gt;</caption>
+            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
+            <tbody>
+              <tr><td><code>src</code></td><td>The video file URL.</td></tr>
+              <tr><td><code>controls</code></td><td>Shows native playback controls.</td></tr>
+              <tr><td><code>poster</code></td><td>An image displayed before playback.</td></tr>
+              <tr><td><code>width</code></td><td>The display width in CSS pixels.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example-pair">
+          <div class="code-panel">
+            <h3 class="panel-label" id="code-video">Example <span>HTML code</span></h3>
+            <pre><code>&lt;video controls width="640" preload="metadata"
+       poster="images/video-poster.svg" src="images/html-demo.webm"&gt;
+  &lt;track kind="captions" src="images/captions.vtt"
+         srclang="en" label="English" default&gt;
+  &lt;a href="images/html-demo.webm"&gt;Download the video&lt;/a&gt;
+&lt;/video&gt;
+&lt;p&gt;Transcript: HTML gives a page structure. CSS gives it style. Build, then review.&lt;/p&gt;</code></pre>
+          </div>
+          <div class="result-panel">
+            <h3 class="panel-label" id="result-video">Result <span>Live preview</span></h3>
+            <div class="demo">
+<video controls width="640" preload="metadata"
+       poster="images/video-poster.svg" src="images/html-demo.webm">
+  <track kind="captions" src="images/captions.vtt"
+         srclang="en" label="English" default>
+  <a href="images/html-demo.webm">Download the video</a>
+</video>
+<p>Transcript: HTML gives a page structure. CSS gives it style. Build, then review.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <nav class="chapter-pager" aria-label="Previous and next chapters"><a href="text.html"><span>← Previous chapter</span>Text formatting</a><a href="lists.html"><span>Next chapter →</span>Lists</a></nav>
+    </main>
+  </div>
+  <footer class="site-footer"><p><strong>HTML / REVIEW</strong><span>Lab Work 3 · University web development</span></p><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>

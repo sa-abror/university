@@ -1,0 +1,9 @@
+# Local editor settings and Python environments are not part of the website.
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
