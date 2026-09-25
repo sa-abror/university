@@ -7,13 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
@@ -21,32 +20,24 @@
     <a href="tables.html">Tables</a>
     <a href="forms.html">Forms</a>
     <a href="media.html">Media</a>
-    <a href="semantic.html" class="active" aria-current="page">Semantic</a>
+    <a href="semantic.html" class="active">Semantic</a>
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>Semantic and layout tags</h1>
-      <p>Semantic tags explain the purpose of each part of a page.</p>
-    </div>
+  <div class="content">
+    <h1>Semantic and layout tags</h1>
+    <p>Semantic tags explain the purpose of each part of a page.</p>
 
-    <!-- &lt;header&gt; -->
-    <section class="tag" id="tag-header">
+    <div class="tag">
       <h2>&lt;header&gt;</h2>
-
       <h3>Definition</h3>
       <p>Contains the introduction to a page or section.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -62,89 +53,72 @@
           <p>Welcome to my page!</p>
         </header>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;nav&gt; -->
-    <section class="tag" id="tag-nav">
+    <div class="tag">
       <h2>&lt;nav&gt;</h2>
-
       <h3>Definition</h3>
       <p>Groups the main navigation links.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;nav aria-label="Example menu"&gt;
+      <pre><code>&lt;nav&gt;
   &lt;a href="index.html"&gt;Home&lt;/a&gt;
   &lt;a href="text.html"&gt;Text&lt;/a&gt;
 &lt;/nav&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <nav aria-label="Example menu">
+        <nav>
           <a href="index.html">Home</a>
           <a href="text.html">Text</a>
         </nav>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;main&gt; -->
-    <section class="tag" id="tag-main">
+    <div class="tag">
       <h2>&lt;main&gt;</h2>
-
       <h3>Definition</h3>
       <p>Contains the main content of a page. Use one visible main element per page.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
       <pre><code>&lt;main&gt;
-  &lt;h1&gt;My lesson&lt;/h1&gt;
-  &lt;p&gt;Today I am learning HTML.&lt;/p&gt;
+  &lt;h2&gt;Main content&lt;/h2&gt;
+  &lt;p&gt;This is the main part of the page.&lt;/p&gt;
 &lt;/main&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/layout.html" title="Example of &lt;main&gt;"></iframe>
-        <p><a href="examples/layout.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <main>
+          <h2>Main content</h2>
+          <p>This is the main part of the page.</p>
+        </main>
       </div>
-      <p class="note">The result opens a small example page so we do not put a main element inside another main.</p>
-    </section>
+    </div>
 
-    <!-- &lt;section&gt; -->
-    <section class="tag" id="tag-section">
+    <div class="tag">
       <h2>&lt;section&gt;</h2>
-
       <h3>Definition</h3>
       <p>Groups content about one topic, usually with a heading.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -160,90 +134,18 @@
           <p>I am a first-year student.</p>
         </section>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;article&gt; -->
-    <section class="tag" id="tag-article">
-      <h2>&lt;article&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Contains a complete piece of content, such as a blog post.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;article&gt;
-  &lt;h3&gt;My first lesson&lt;/h3&gt;
-  &lt;p&gt;Today I created an HTML page.&lt;/p&gt;
-&lt;/article&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <article>
-          <h3>My first lesson</h3>
-          <p>Today I created an HTML page.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- &lt;aside&gt; -->
-    <section class="tag" id="tag-aside">
-      <h2>&lt;aside&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Contains extra information related to the main content.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;aside aria-label="Example tip"&gt;
-  &lt;h3&gt;Tip&lt;/h3&gt;
-  &lt;p&gt;Save your file before opening it.&lt;/p&gt;
-&lt;/aside&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <aside aria-label="Example tip">
-          <h3>Tip</h3>
-          <p>Save your file before opening it.</p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- &lt;footer&gt; -->
-    <section class="tag" id="tag-footer">
+    <div class="tag">
       <h2>&lt;footer&gt;</h2>
-
       <h3>Definition</h3>
       <p>Contains information at the end of a page or section.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -257,24 +159,18 @@
           <p>Created for HTML Lab Work 3.</p>
         </footer>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;div&gt; -->
-    <section class="tag" id="tag-div">
+    <div class="tag">
       <h2>&lt;div&gt;</h2>
-
       <h3>Definition</h3>
       <p>Groups elements in a block. It does not give them a special meaning.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -288,24 +184,18 @@
           <p>This is a simple box.</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;span&gt; -->
-    <section class="tag" id="tag-span">
+    <div class="tag">
       <h2>&lt;span&gt;</h2>
-
       <h3>Definition</h3>
       <p>Groups a small part of text, for example to change its colour.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -315,8 +205,8 @@
       <div class="result">
         <p>I am learning <span class="highlight">HTML</span>.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

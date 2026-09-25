@@ -7,17 +7,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
-    <a href="lists.html" class="active" aria-current="page">Lists</a>
+    <a href="lists.html" class="active">Lists</a>
     <a href="tables.html">Tables</a>
     <a href="forms.html">Forms</a>
     <a href="media.html">Media</a>
@@ -25,28 +24,20 @@
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>HTML lists</h1>
-      <p>Lists help us show steps, groups of items and definitions.</p>
-    </div>
+  <div class="content">
+    <h1>HTML lists</h1>
+    <p>Lists help us show steps, groups of items and definitions.</p>
 
-    <!-- &lt;ul&gt; -->
-    <section class="tag" id="tag-ul">
+    <div class="tag">
       <h2>&lt;ul&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a list with bullet points.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -62,24 +53,18 @@
           <li>CSS</li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;ol&gt; -->
-    <section class="tag" id="tag-ol">
+    <div class="tag">
       <h2>&lt;ol&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a numbered list.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>start</td><td>The number of the first item.</td></tr>
-          <tr><td>type</td><td>The numbering style, for example 1, A or a.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>start</td><td>The number of the first item.</td></tr>
+        <tr><td>type</td><td>The numbering style, for example 1, A or a.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -97,23 +82,17 @@
           <li>Open it in a browser.</li>
         </ol>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;li&gt; -->
-    <section class="tag" id="tag-li">
+    <div class="tag">
       <h2>&lt;li&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates one item inside a ul or ol list.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>value</td><td>Sets the item number inside an ol list.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>value</td><td>Sets the item number inside an ol list.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -129,107 +108,8 @@
           <li>My second item</li>
         </ul>
       </div>
-    </section>
-
-    <!-- &lt;dl&gt; -->
-    <section class="tag" id="tag-dl">
-      <h2>&lt;dl&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Creates a list of terms and their descriptions.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;dl&gt;
-  &lt;dt&gt;HTML&lt;/dt&gt;
-  &lt;dd&gt;A language for building web pages.&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <dl>
-          <dt>HTML</dt>
-          <dd>A language for building web pages.</dd>
-        </dl>
-      </div>
-    </section>
-
-    <!-- &lt;dt&gt; -->
-    <section class="tag" id="tag-dt">
-      <h2>&lt;dt&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Contains the term in a description list.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;dl&gt;
-  &lt;dt&gt;HTML&lt;/dt&gt;
-  &lt;dd&gt;A language for building web pages.&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <dl>
-          <dt>HTML</dt>
-          <dd>A language for building web pages.</dd>
-        </dl>
-      </div>
-    </section>
-
-    <!-- &lt;dd&gt; -->
-    <section class="tag" id="tag-dd">
-      <h2>&lt;dd&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Contains the description of a term.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;dl&gt;
-  &lt;dt&gt;HTML&lt;/dt&gt;
-  &lt;dd&gt;A language for building web pages.&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <dl>
-          <dt>HTML</dt>
-          <dd>A language for building web pages.</dd>
-        </dl>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

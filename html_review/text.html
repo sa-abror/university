@@ -7,15 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
-    <a href="text.html" class="active" aria-current="page">Text</a>
+    <a href="text.html" class="active">Text</a>
     <a href="links.html">Links &amp; images</a>
     <a href="lists.html">Lists</a>
     <a href="tables.html">Tables</a>
@@ -25,65 +24,146 @@
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>Text formatting</h1>
-      <p>Use these tags to write headings, paragraphs and formatted text.</p>
-    </div>
+  <div class="content">
+    <h1>Text formatting</h1>
+    <p>Use these tags to write headings, paragraphs and formatted text.</p>
 
-    <!-- &lt;h1&gt; to &lt;h6&gt; -->
-    <section class="tag" id="tag-headings">
-      <h2>&lt;h1&gt; to &lt;h6&gt;</h2>
-
+    <div class="tag">
+      <h2>&lt;h1&gt;</h2>
       <h3>Definition</h3>
-      <p>Headings show the structure of a page. h1 is the main heading; h2 to h6 are smaller heading levels.</p>
+      <p>Creates the main heading of a page.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;h1&gt;Main heading&lt;/h1&gt;
-&lt;h2&gt;Section heading&lt;/h2&gt;
-&lt;h3&gt;Level 3 heading&lt;/h3&gt;
-&lt;h4&gt;Level 4 heading&lt;/h4&gt;
-&lt;h5&gt;Level 5 heading&lt;/h5&gt;
-&lt;h6&gt;Level 6 heading&lt;/h6&gt;</code></pre>
+      <pre><code>&lt;h1&gt;Level 1 heading&lt;/h1&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <h1>Main heading</h1>
-        <h2>Section heading</h2>
+        <h1>Level 1 heading</h1>
+      </div>
+    </div>
+
+    <div class="tag">
+      <h2>&lt;h2&gt;</h2>
+      <h3>Definition</h3>
+      <p>Creates a level-2 heading. Use it for a subsection below a level-1 heading.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;h2&gt;Level 2 heading&lt;/h2&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <h2>Level 2 heading</h2>
+      </div>
+    </div>
+
+    <div class="tag">
+      <h2>&lt;h3&gt;</h2>
+      <h3>Definition</h3>
+      <p>Creates a level-3 heading. Use it for a subsection below a level-2 heading.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;h3&gt;Level 3 heading&lt;/h3&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
         <h3>Level 3 heading</h3>
+      </div>
+    </div>
+
+    <div class="tag">
+      <h2>&lt;h4&gt;</h2>
+      <h3>Definition</h3>
+      <p>Creates a level-4 heading. Use it for a subsection below a level-3 heading.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;h4&gt;Level 4 heading&lt;/h4&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
         <h4>Level 4 heading</h4>
+      </div>
+    </div>
+
+    <div class="tag">
+      <h2>&lt;h5&gt;</h2>
+      <h3>Definition</h3>
+      <p>Creates a level-5 heading. Use it for a subsection below a level-4 heading.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;h5&gt;Level 5 heading&lt;/h5&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
         <h5>Level 5 heading</h5>
+      </div>
+    </div>
+
+    <div class="tag">
+      <h2>&lt;h6&gt;</h2>
+      <h3>Definition</h3>
+      <p>Creates a level-6 heading. Use it for a subsection below a level-5 heading.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;h6&gt;Level 6 heading&lt;/h6&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
         <h6>Level 6 heading</h6>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;p&gt; -->
-    <section class="tag" id="tag-p">
+    <div class="tag">
       <h2>&lt;p&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a paragraph of text.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -93,24 +173,18 @@
       <div class="result">
         <p>I am learning HTML.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;br&gt; -->
-    <section class="tag" id="tag-br">
+    <div class="tag">
       <h2>&lt;br&gt;</h2>
-
       <h3>Definition</h3>
       <p>Starts a new line inside a paragraph. It has no closing tag.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -120,109 +194,18 @@
       <div class="result">
         <p>Hello!<br>Welcome to my website.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;hr&gt; -->
-    <section class="tag" id="tag-hr">
-      <h2>&lt;hr&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Separates two topics, usually with a horizontal line.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;First topic.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Second topic.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <p>First topic.</p>
-        <hr>
-        <p>Second topic.</p>
-      </div>
-    </section>
-
-    <!-- &lt;strong&gt; -->
-    <section class="tag" id="tag-strong">
-      <h2>&lt;strong&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Marks important text. It usually looks bold.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;&lt;strong&gt;Remember&lt;/strong&gt; to save your file.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <p><strong>Remember</strong> to save your file.</p>
-      </div>
-    </section>
-
-    <!-- &lt;em&gt; -->
-    <section class="tag" id="tag-em">
-      <h2>&lt;em&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Adds emphasis to a word. It usually looks italic.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;I &lt;em&gt;really&lt;/em&gt; like HTML.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <p>I <em>really</em> like HTML.</p>
-      </div>
-    </section>
-
-    <!-- &lt;b&gt; -->
-    <section class="tag" id="tag-b">
+    <div class="tag">
       <h2>&lt;b&gt;</h2>
-
       <h3>Definition</h3>
       <p>Draws attention to text without adding extra importance. It usually looks bold.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -232,24 +215,18 @@
       <div class="result">
         <p>Topic: <b>HTML</b>.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;i&gt; -->
-    <section class="tag" id="tag-i">
+    <div class="tag">
       <h2>&lt;i&gt;</h2>
-
       <h3>Definition</h3>
       <p>Marks a term or a phrase in another voice or language. It usually looks italic.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -259,172 +236,50 @@
       <div class="result">
         <p>The word <i>element</i> is an HTML term.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;u&gt; -->
-    <section class="tag" id="tag-u">
-      <h2>&lt;u&gt;</h2>
-
+    <div class="tag">
+      <h2>&lt;strong&gt;</h2>
       <h3>Definition</h3>
-      <p>Marks an annotation, such as a spelling mistake. It usually adds an underline.</p>
+      <p>Marks important text. It usually looks bold.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;Check the spelling: &lt;u&gt;paragraf&lt;/u&gt;.&lt;/p&gt;</code></pre>
+      <pre><code>&lt;p&gt;&lt;strong&gt;Remember&lt;/strong&gt; to save your file.&lt;/p&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <p>Check the spelling: <u>paragraf</u>.</p>
+        <p><strong>Remember</strong> to save your file.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;mark&gt; -->
-    <section class="tag" id="tag-mark">
-      <h2>&lt;mark&gt;</h2>
-
+    <div class="tag">
+      <h2>&lt;em&gt;</h2>
       <h3>Definition</h3>
-      <p>Highlights text that is relevant to the reader.</p>
+      <p>Adds emphasis to a word. It usually looks italic.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;Today we study &lt;mark&gt;HTML&lt;/mark&gt;.&lt;/p&gt;</code></pre>
+      <pre><code>&lt;p&gt;I &lt;em&gt;really&lt;/em&gt; like HTML.&lt;/p&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <p>Today we study <mark>HTML</mark>.</p>
+        <p>I <em>really</em> like HTML.</p>
       </div>
-    </section>
-
-    <!-- &lt;sub&gt; -->
-    <section class="tag" id="tag-sub">
-      <h2>&lt;sub&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Shows text below the normal line, for example in a chemical formula.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;Water: H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <p>Water: H<sub>2</sub>O.</p>
-      </div>
-    </section>
-
-    <!-- &lt;sup&gt; -->
-    <section class="tag" id="tag-sup">
-      <h2>&lt;sup&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Shows text above the normal line, for example a power in maths.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;Area: x&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <p>Area: x<sup>2</sup>.</p>
-      </div>
-    </section>
-
-    <!-- &lt;code&gt; -->
-    <section class="tag" id="tag-code">
-      <h2>&lt;code&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Marks a short piece of computer code.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;p&gt;Use &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; for a paragraph.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <p>Use <code>&lt;p&gt;</code> for a paragraph.</p>
-      </div>
-    </section>
-
-    <!-- &lt;pre&gt; -->
-    <section class="tag" id="tag-pre">
-      <h2>&lt;pre&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Keeps spaces and line breaks as they are written in the code.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Hello!&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;Welcome!&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-<pre><code>&lt;p&gt;Hello!&lt;/p&gt;
-&lt;p&gt;Welcome!&lt;/p&gt;</code></pre>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

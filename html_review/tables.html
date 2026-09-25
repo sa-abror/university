@@ -7,381 +7,134 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
     <a href="lists.html">Lists</a>
-    <a href="tables.html" class="active" aria-current="page">Tables</a>
+    <a href="tables.html" class="active">Tables</a>
     <a href="forms.html">Forms</a>
     <a href="media.html">Media</a>
     <a href="semantic.html">Semantic</a>
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>HTML tables</h1>
-      <p>Use a table to show data in rows and columns.</p>
-    </div>
+  <div class="content">
+    <h1>HTML tables</h1>
+    <p>Use a table to show data in rows and columns.</p>
 
-    <!-- &lt;table&gt; -->
-    <section class="tag" id="tag-table">
+    <div class="tag">
       <h2>&lt;table&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a table with rows and columns.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
       <pre><code>&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Name&lt;/th&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
         <table>
-          <tbody>
-            <tr><th scope="col">Name</th><th scope="col">Subject</th></tr>
-            <tr><td>Ali</td><td>HTML</td></tr>
-          </tbody>
+          <tr><th>Name</th><th>Subject</th></tr>
+          <tr><td>Ali</td><td>HTML</td></tr>
         </table>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;caption&gt; -->
-    <section class="tag" id="tag-caption">
-      <h2>&lt;caption&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Adds a title to a table.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;table&gt;
-  &lt;caption&gt;My subjects&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;th scope="col"&gt;Hours&lt;/th&gt;&lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;&lt;th scope="row"&gt;Total&lt;/th&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <table>
-          <caption>My subjects</caption>
-          <thead>
-            <tr><th scope="col">Subject</th><th scope="col">Hours</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>HTML</td><td>2</td></tr>
-            <tr><td>CSS</td><td>1</td></tr>
-          </tbody>
-          <tfoot>
-            <tr><th scope="row">Total</th><td>3</td></tr>
-          </tfoot>
-        </table>
-      </div>
-    </section>
-
-    <!-- &lt;tr&gt; -->
-    <section class="tag" id="tag-tr">
+    <div class="tag">
       <h2>&lt;tr&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates one row in a table.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
       <pre><code>&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Name&lt;/th&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
         <table>
-          <tbody>
-            <tr><th scope="col">Name</th><th scope="col">Subject</th></tr>
-            <tr><td>Ali</td><td>HTML</td></tr>
-          </tbody>
+          <tr><th>Name</th><th>Subject</th></tr>
+          <tr><td>Ali</td><td>HTML</td></tr>
         </table>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;th&gt; -->
-    <section class="tag" id="tag-th">
+    <div class="tag">
       <h2>&lt;th&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a heading cell in a table.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>scope</td><td>Use col for a column heading or row for a row heading.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>colspan</td><td>Makes a heading cell cover more than one column.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
       <pre><code>&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Name&lt;/th&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
         <table>
-          <tbody>
-            <tr><th scope="col">Name</th><th scope="col">Subject</th></tr>
-            <tr><td>Ali</td><td>HTML</td></tr>
-          </tbody>
+          <tr><th>Name</th><th>Subject</th></tr>
+          <tr><td>Ali</td><td>HTML</td></tr>
         </table>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;td&gt; -->
-    <section class="tag" id="tag-td">
+    <div class="tag">
       <h2>&lt;td&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a normal data cell in a table.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>colspan</td><td>The number of columns covered by the cell.</td></tr>
-          <tr><td>rowspan</td><td>The number of rows covered by the cell.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>colspan</td><td>The number of columns covered by the cell.</td></tr>
+        <tr><td>rowspan</td><td>The number of rows covered by the cell.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
       <pre><code>&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Name&lt;/th&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Subject&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
         <table>
-          <tbody>
-            <tr><th scope="col">Name</th><th scope="col">Subject</th></tr>
-            <tr><td>Ali</td><td>HTML</td></tr>
-          </tbody>
+          <tr><th>Name</th><th>Subject</th></tr>
+          <tr><td>Ali</td><td>HTML</td></tr>
         </table>
       </div>
-    </section>
-
-    <!-- &lt;thead&gt; -->
-    <section class="tag" id="tag-thead">
-      <h2>&lt;thead&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Groups the heading rows of a table.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;table&gt;
-  &lt;caption&gt;My subjects&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;th scope="col"&gt;Hours&lt;/th&gt;&lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;&lt;th scope="row"&gt;Total&lt;/th&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <table>
-          <caption>My subjects</caption>
-          <thead>
-            <tr><th scope="col">Subject</th><th scope="col">Hours</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>HTML</td><td>2</td></tr>
-            <tr><td>CSS</td><td>1</td></tr>
-          </tbody>
-          <tfoot>
-            <tr><th scope="row">Total</th><td>3</td></tr>
-          </tfoot>
-        </table>
-      </div>
-    </section>
-
-    <!-- &lt;tbody&gt; -->
-    <section class="tag" id="tag-tbody">
-      <h2>&lt;tbody&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Groups the main data rows of a table.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;table&gt;
-  &lt;caption&gt;My subjects&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;th scope="col"&gt;Hours&lt;/th&gt;&lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;&lt;th scope="row"&gt;Total&lt;/th&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <table>
-          <caption>My subjects</caption>
-          <thead>
-            <tr><th scope="col">Subject</th><th scope="col">Hours</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>HTML</td><td>2</td></tr>
-            <tr><td>CSS</td><td>1</td></tr>
-          </tbody>
-          <tfoot>
-            <tr><th scope="row">Total</th><td>3</td></tr>
-          </tfoot>
-        </table>
-      </div>
-    </section>
-
-    <!-- &lt;tfoot&gt; -->
-    <section class="tag" id="tag-tfoot">
-      <h2>&lt;tfoot&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Groups the summary rows, such as a total.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;table&gt;
-  &lt;caption&gt;My subjects&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;&lt;th scope="col"&gt;Subject&lt;/th&gt;&lt;th scope="col"&gt;Hours&lt;/th&gt;&lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tbody&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;&lt;th scope="row"&gt;Total&lt;/th&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
-  &lt;/tfoot&gt;
-&lt;/table&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <table>
-          <caption>My subjects</caption>
-          <thead>
-            <tr><th scope="col">Subject</th><th scope="col">Hours</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>HTML</td><td>2</td></tr>
-            <tr><td>CSS</td><td>1</td></tr>
-          </tbody>
-          <tfoot>
-            <tr><th scope="row">Total</th><td>3</td></tr>
-          </tfoot>
-        </table>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

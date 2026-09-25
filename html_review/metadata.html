@@ -7,13 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
@@ -22,103 +21,78 @@
     <a href="forms.html">Forms</a>
     <a href="media.html">Media</a>
     <a href="semantic.html">Semantic</a>
-    <a href="metadata.html" class="active" aria-current="page">Metadata</a>
+    <a href="metadata.html" class="active">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>Page metadata</h1>
-      <p>Metadata gives the browser information about the page.</p>
-    </div>
+  <div class="content">
+    <h1>Page metadata</h1>
+    <p>Metadata gives the browser information about the page.</p>
 
-    <!-- &lt;title&gt; -->
-    <section class="tag" id="tag-title">
+    <div class="tag">
       <h2>&lt;title&gt;</h2>
-
       <h3>Definition</h3>
       <p>Sets the text shown on the browser tab. It goes inside head.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>None required</td><td>A title works without any attributes.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;title&gt;My first page&lt;/title&gt;</code></pre>
+      <pre><code>&lt;title&gt;Metadata | HTML Review&lt;/title&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;title&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p>The browser tab is named Metadata | HTML Review.</p>
       </div>
-      <p class="note">The title is not a heading. Open the example page to see its title on the browser tab.</p>
-    </section>
+      <p class="note">This title is already written in the head of this page.</p>
+    </div>
 
-    <!-- &lt;meta&gt; -->
-    <section class="tag" id="tag-meta">
+    <div class="tag">
       <h2>&lt;meta&gt;</h2>
-
       <h3>Definition</h3>
       <p>Gives the browser information such as character encoding and screen settings.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>charset</td><td>UTF-8 supports text in different languages.</td></tr>
-          <tr><td>name</td><td>The setting name, for example viewport.</td></tr>
-          <tr><td>content</td><td>The value of the setting.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>charset</td><td>UTF-8 supports text in different languages.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+      <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;meta&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p>Hello! Salom! Привет!</p>
       </div>
-      <p class="note">These tags do not show text. They help the browser display the page correctly.</p>
-    </section>
+      <p class="note">This meta tag is already in the head. The text above uses UTF-8; the tag itself is not visible.</p>
+    </div>
 
-    <!-- &lt;link&gt; -->
-    <section class="tag" id="tag-link">
+    <div class="tag">
       <h2>&lt;link&gt;</h2>
-
       <h3>Definition</h3>
       <p>Connects the page to a file such as an external stylesheet.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>rel</td><td>Use stylesheet to connect a CSS file.</td></tr>
-          <tr><td>href</td><td>The path to that file.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>rel</td><td>Use stylesheet to connect a CSS file.</td></tr>
+        <tr><td>href</td><td>The path to that file.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;link rel="stylesheet" href="../css/style.css"&gt;</code></pre>
+      <pre><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;link&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p class="highlight">This text uses our CSS file.</p>
       </div>
-      <p class="note">The example is in the examples folder, so ../ goes up one folder to find css/style.css.</p>
-    </section>
-  </main>
+      <p class="note">This link is already in the head. It loads the colours and other styles used on this page.</p>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

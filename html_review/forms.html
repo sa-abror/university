@@ -7,81 +7,66 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
     <a href="lists.html">Lists</a>
     <a href="tables.html">Tables</a>
-    <a href="forms.html" class="active" aria-current="page">Forms</a>
+    <a href="forms.html" class="active">Forms</a>
     <a href="media.html">Media</a>
     <a href="semantic.html">Semantic</a>
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>HTML forms</h1>
-      <p>Forms let a user enter text, choose an option and press a button.</p>
-    </div>
+  <div class="content">
+    <h1>HTML forms</h1>
+    <p>Forms let a user enter text, choose an option and press a button.</p>
 
-    <!-- &lt;form&gt; -->
-    <section class="tag" id="tag-form">
+    <div class="tag">
       <h2>&lt;form&gt;</h2>
-
       <h3>Definition</h3>
       <p>Groups inputs and sends their values when the user presses Submit.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>action</td><td>The page that receives the values.</td></tr>
-          <tr><td>method</td><td>get puts values in the URL; post sends them in the request body.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>action</td><td>The page that receives the values.</td></tr>
+        <tr><td>method</td><td>get puts values in the URL; post sends them in the request body.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;form action="forms.html#tag-form" method="get"&gt;
-  &lt;label for="form-topic"&gt;Topic:&lt;/label&gt;
-  &lt;input id="form-topic" type="text" name="topic" value="HTML" required&gt;
-  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+      <pre><code>&lt;form action="forms.html" method="get"&gt;
+  &lt;label for="topic"&gt;Topic:&lt;/label&gt;
+  &lt;input id="topic" type="text" name="topic"&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
 &lt;/form&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <form action="forms.html#tag-form" method="get">
-          <label for="form-topic">Topic:</label>
-          <input id="form-topic" type="text" name="topic" value="HTML" required>
-          <button type="submit">Submit</button>
+        <form action="forms.html" method="get">
+          <label for="topic">Topic:</label>
+          <input id="topic" type="text" name="topic">
+          <button type="submit">Send</button>
         </form>
       </div>
       <p class="note">This example reloads this page with the topic in the URL. It does not save the answer.</p>
-    </section>
+    </div>
 
-    <!-- &lt;label&gt; -->
-    <section class="tag" id="tag-label">
+    <div class="tag">
       <h2>&lt;label&gt;</h2>
-
       <h3>Definition</h3>
       <p>Adds a name to an input. Click the label to select its input.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>for</td><td>Must match the id of the input.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>for</td><td>Must match the id of the input.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -93,61 +78,41 @@
         <label for="student-name">Student name:</label>
         <input id="student-name" type="text">
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;input&gt; -->
-    <section class="tag" id="tag-input">
+    <div class="tag">
       <h2>&lt;input&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates an input, such as a text box or a checkbox.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>type</td><td>The input type: text, email, checkbox and others.</td></tr>
-          <tr><td>name</td><td>The name used when sending the value.</td></tr>
-          <tr><td>placeholder</td><td>A short hint inside the input.</td></tr>
-          <tr><td>required</td><td>The input must be filled before submitting its form.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>type</td><td>The input type, for example text.</td></tr>
+        <tr><td>name</td><td>The name of the field when the form is sent.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;label for="email"&gt;Practice email:&lt;/label&gt;
-&lt;input id="email" type="email" placeholder="name@example.com" required&gt;
-&lt;label&gt;
-  &lt;input id="practice-check" type="checkbox"&gt; I like HTML
-&lt;/label&gt;</code></pre>
+      <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input id="name" type="text" name="name"&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <label for="email">Practice email:</label>
-        <input id="email" type="email" placeholder="name@example.com" required>
-        <label>
-          <input id="practice-check" type="checkbox"> I like HTML
-        </label>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name">
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;textarea&gt; -->
-    <section class="tag" id="tag-textarea">
+    <div class="tag">
       <h2>&lt;textarea&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a text box with several lines.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>rows</td><td>The number of visible text lines.</td></tr>
-          <tr><td>name</td><td>The name used when sending the text.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>rows</td><td>The number of visible text lines.</td></tr>
+        <tr><td>name</td><td>The name used when sending the text.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -159,23 +124,17 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="3"></textarea>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;select&gt; -->
-    <section class="tag" id="tag-select">
+    <div class="tag">
       <h2>&lt;select&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a drop-down list.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>name</td><td>The name used when sending the selected value.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>name</td><td>The name used when sending the selected value.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -193,24 +152,18 @@
           <option value="css">CSS</option>
         </select>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;option&gt; -->
-    <section class="tag" id="tag-option">
+    <div class="tag">
       <h2>&lt;option&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates one choice inside a select list.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>value</td><td>The value sent when this option is chosen.</td></tr>
-          <tr><td>selected</td><td>Selects the option when the page opens.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>value</td><td>The value sent when this option is chosen.</td></tr>
+        <tr><td>selected</td><td>Selects the option when the page opens.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
@@ -228,113 +181,38 @@
           <option value="uz">Uzbek</option>
         </select>
       </div>
-    </section>
+    </div>
 
-    <!-- &lt;button&gt; -->
-    <section class="tag" id="tag-button">
+    <div class="tag">
       <h2>&lt;button&gt;</h2>
-
       <h3>Definition</h3>
       <p>Creates a clickable button.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>type</td><td>submit sends a form; reset restores its starting values.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>type</td><td>submit sends a form; reset restores its starting values.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;form action="forms.html#tag-button" method="get"&gt;
-  &lt;label for="reset-topic"&gt;Change this text:&lt;/label&gt;
+      <pre><code>&lt;form action="forms.html" method="get"&gt;
+  &lt;label for="reset-topic"&gt;Topic:&lt;/label&gt;
   &lt;input id="reset-topic" type="text" name="topic" value="HTML"&gt;
-  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
   &lt;button type="reset"&gt;Reset&lt;/button&gt;
 &lt;/form&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <form action="forms.html#tag-button" method="get">
-          <label for="reset-topic">Change this text:</label>
+        <form action="forms.html" method="get">
+          <label for="reset-topic">Topic:</label>
           <input id="reset-topic" type="text" name="topic" value="HTML">
-          <button type="submit">Submit</button>
+          <button type="submit">Send</button>
           <button type="reset">Reset</button>
         </form>
       </div>
-    </section>
-
-    <!-- &lt;fieldset&gt; -->
-    <section class="tag" id="tag-fieldset">
-      <h2>&lt;fieldset&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Groups related form inputs inside a border.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>disabled</td><td>Disables the inputs in the group.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;fieldset&gt;
-  &lt;legend&gt;Choose a topic&lt;/legend&gt;
-  &lt;label&gt;&lt;input type="radio" name="topic-choice" value="html" checked&gt; HTML&lt;/label&gt;
-  &lt;label&gt;&lt;input type="radio" name="topic-choice" value="css"&gt; CSS&lt;/label&gt;
-&lt;/fieldset&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <fieldset>
-          <legend>Choose a topic</legend>
-          <label><input type="radio" name="topic-choice" value="html" checked> HTML</label>
-          <label><input type="radio" name="topic-choice" value="css"> CSS</label>
-        </fieldset>
-      </div>
-    </section>
-
-    <!-- &lt;legend&gt; -->
-    <section class="tag" id="tag-legend">
-      <h2>&lt;legend&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Adds a title to a fieldset.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;fieldset&gt;
-  &lt;legend&gt;Student details&lt;/legend&gt;
-  &lt;label for="legend-name"&gt;Name:&lt;/label&gt;
-  &lt;input id="legend-name" type="text"&gt;
-&lt;/fieldset&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <fieldset>
-          <legend>Student details</legend>
-          <label for="legend-name">Name:</label>
-          <input id="legend-name" type="text">
-        </fieldset>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

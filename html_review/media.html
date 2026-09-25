@@ -7,272 +7,99 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
+  <nav class="menu">
     <a href="index.html">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
     <a href="lists.html">Lists</a>
     <a href="tables.html">Tables</a>
     <a href="forms.html">Forms</a>
-    <a href="media.html" class="active" aria-current="page">Media</a>
+    <a href="media.html" class="active">Media</a>
     <a href="semantic.html">Semantic</a>
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>Multimedia</h1>
-      <p>Add audio, video, captions and other content to a page.</p>
-    </div>
+  <div class="content">
+    <h1>Multimedia</h1>
+    <p>Add audio, video, captions and other content to a page.</p>
 
-    <!-- &lt;audio&gt; -->
-    <section class="tag" id="tag-audio">
+    <div class="tag">
       <h2>&lt;audio&gt;</h2>
-
       <h3>Definition</h3>
       <p>Plays an audio file on the page.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>src</td><td>The audio file path.</td></tr>
-          <tr><td>controls</td><td>Shows playback controls.</td></tr>
-          <tr><td>loop</td><td>Repeats the audio.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>The audio file path.</td></tr>
+        <tr><td>controls</td><td>Shows playback controls.</td></tr>
+        <tr><td>loop</td><td>Repeats the audio.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;audio controls src="images/chime.wav"&gt;
-  &lt;a href="images/chime.wav"&gt;Download audio&lt;/a&gt;
-&lt;/audio&gt;
-&lt;p&gt;Sound: three short musical notes.&lt;/p&gt;</code></pre>
+      <pre><code>&lt;audio controls src="images/chime.wav"&gt;&lt;/audio&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <audio controls src="images/chime.wav">
-          <a href="images/chime.wav">Download audio</a>
-        </audio>
-        <p>Sound: three short musical notes.</p>
+        <audio controls src="images/chime.wav"></audio>
       </div>
-    </section>
+      <p class="note">Sound: three short musical notes.</p>
+    </div>
 
-    <!-- &lt;video&gt; -->
-    <section class="tag" id="tag-video">
+    <div class="tag">
       <h2>&lt;video&gt;</h2>
-
       <h3>Definition</h3>
       <p>Plays a video file on the page.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>src</td><td>The video file path.</td></tr>
-          <tr><td>controls</td><td>Shows playback controls.</td></tr>
-          <tr><td>poster</td><td>An image shown before the video starts.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>The video file path.</td></tr>
+        <tr><td>controls</td><td>Shows playback controls.</td></tr>
+        <tr><td>poster</td><td>An image shown before the video starts.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;video controls width="480" src="images/html-demo.webm"
-       poster="images/video-poster.svg"&gt;
-  &lt;track src="images/captions.vtt" kind="captions"
-         srclang="en" label="English" default&gt;
-  &lt;a href="images/html-demo.webm"&gt;Download video&lt;/a&gt;
-&lt;/video&gt;
-&lt;p&gt;Video text: HTML gives a page structure. CSS gives it style. Build, then review.&lt;/p&gt;</code></pre>
+      <pre><code>&lt;video controls width="400" src="images/html-demo.webm"&gt;&lt;/video&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <video controls width="480" src="images/html-demo.webm"
-               poster="images/video-poster.svg">
-          <track src="images/captions.vtt" kind="captions"
-                 srclang="en" label="English" default>
-          <a href="images/html-demo.webm">Download video</a>
-        </video>
-        <p>Video text: HTML gives a page structure. CSS gives it style. Build, then review.</p>
+        <video controls width="400" src="images/html-demo.webm"></video>
       </div>
-    </section>
+      <p class="note">Video text: HTML gives a page structure. CSS gives it style. Build, then review.</p>
+    </div>
 
-    <!-- &lt;source&gt; -->
-    <section class="tag" id="tag-source">
+    <div class="tag">
       <h2>&lt;source&gt;</h2>
-
       <h3>Definition</h3>
       <p>Provides a file for an audio or video player to use.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>src</td><td>The file path.</td></tr>
-          <tr><td>type</td><td>The file type, for example audio/wav.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>The file path.</td></tr>
+        <tr><td>type</td><td>The file type, for example audio/wav.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
       <pre><code>&lt;audio controls&gt;
   &lt;source src="images/chime.wav" type="audio/wav"&gt;
-  &lt;a href="images/chime.wav"&gt;Download audio&lt;/a&gt;
-&lt;/audio&gt;
-&lt;p&gt;Sound: three short musical notes.&lt;/p&gt;</code></pre>
+&lt;/audio&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
         <audio controls>
           <source src="images/chime.wav" type="audio/wav">
-          <a href="images/chime.wav">Download audio</a>
         </audio>
-        <p>Sound: three short musical notes.</p>
       </div>
-    </section>
-
-    <!-- &lt;track&gt; -->
-    <section class="tag" id="tag-track">
-      <h2>&lt;track&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Adds captions to a video from a text file.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>src</td><td>The caption file path.</td></tr>
-          <tr><td>kind</td><td>The type of text, such as captions.</td></tr>
-          <tr><td>srclang</td><td>The caption language.</td></tr>
-          <tr><td>default</td><td>Turns on this track by default.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;video controls width="480" src="images/html-demo.webm"&gt;
-  &lt;track src="images/captions.vtt" kind="captions"
-         srclang="en" label="English" default&gt;
-  &lt;a href="images/html-demo.webm"&gt;Download video&lt;/a&gt;
-&lt;/video&gt;
-&lt;p&gt;Video text: HTML gives a page structure. CSS gives it style. Build, then review.&lt;/p&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <video controls width="480" src="images/html-demo.webm">
-          <track src="images/captions.vtt" kind="captions"
-                 srclang="en" label="English" default>
-          <a href="images/html-demo.webm">Download video</a>
-        </video>
-        <p>Video text: HTML gives a page structure. CSS gives it style. Build, then review.</p>
-      </div>
-      <p class="note">Play the video to see the captions. Open the site with Live Server or a local HTTP server.</p>
-    </section>
-
-    <!-- &lt;iframe&gt; -->
-    <section class="tag" id="tag-iframe">
-      <h2>&lt;iframe&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Shows another HTML page inside the current page.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>src</td><td>The page to display.</td></tr>
-          <tr><td>title</td><td>A short description of the embedded page.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;iframe src="examples/page.html" title="My first HTML page"&gt;&lt;/iframe&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <iframe src="examples/page.html" title="My first HTML page"></iframe>
-      </div>
-    </section>
-
-    <!-- &lt;figure&gt; -->
-    <section class="tag" id="tag-figure">
-      <h2>&lt;figure&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Groups an image and its caption.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;figure&gt;
-  &lt;img src="images/study-desk.svg" alt="A laptop, a book and a plant" width="480"&gt;
-  &lt;figcaption&gt;My study desk.&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <figure>
-          <img src="images/study-desk.svg" alt="A laptop, a book and a plant" width="480">
-          <figcaption>My study desk.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- &lt;figcaption&gt; -->
-    <section class="tag" id="tag-figcaption">
-      <h2>&lt;figcaption&gt;</h2>
-
-      <h3>Definition</h3>
-      <p>Adds a caption to a figure.</p>
-
-      <h3>Attributes</h3>
-      <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Example (code)</h3>
-      <pre><code>&lt;figure&gt;
-  &lt;img src="images/study-desk.svg" alt="A laptop, a book and a plant" width="480"&gt;
-  &lt;figcaption&gt;My study desk.&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-
-      <h3>Example (result)</h3>
-      <div class="result">
-        <figure>
-          <img src="images/study-desk.svg" alt="A laptop, a book and a plant" width="480">
-          <figcaption>My study desk.</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
+      <p class="note">Sound: three short musical notes.</p>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>

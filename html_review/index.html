@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
     <p class="site-title">HTML Review</p>
-    <p>Lab Work 3 · Web Development</p>
+    <p>Lab Work 3</p>
   </header>
 
-  <nav class="menu" aria-label="Main menu">
-    <a href="index.html" class="active" aria-current="page">Home</a>
+  <nav class="menu">
+    <a href="index.html" class="active">Home</a>
     <a href="text.html">Text</a>
     <a href="links.html">Links &amp; images</a>
     <a href="lists.html">Lists</a>
@@ -25,173 +24,99 @@
     <a href="metadata.html">Metadata</a>
   </nav>
 
-  <main class="content">
-    <div class="intro">
-      <h1>HTML Review</h1>
-      <p>This website explains the main HTML tags. Choose a topic from the menu and try the examples.</p>
-      <p>Each tag has a definition, an attributes table, example code and its result.</p>
-    </div>
+  <div class="content">
+    <h1>HTML Review</h1>
+    <p>This website explains the main HTML tags. Choose a topic from the menu and try the examples.</p>
 
-    <!-- &lt;!DOCTYPE html&gt; -->
-    <section class="tag" id="tag-doctype">
+    <div class="tag">
       <h2>&lt;!DOCTYPE html&gt;</h2>
-
       <h3>Definition</h3>
       <p>Tells the browser that this is a modern HTML document. It is a declaration, not a tag.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>None</td><td>This declaration has no attributes.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>None</td><td>This declaration has no attributes.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;My first page&lt;/title&gt;
-  &lt;link rel="stylesheet" href="../css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="example-page"&gt;
-  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
-  &lt;p&gt;This is my first web page.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;!DOCTYPE html&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p>This page uses HTML5. The declaration does not display any text.</p>
       </div>
-      <p class="note">The doctype is the first line. It does not show any text on the page.</p>
-    </section>
+    </div>
 
-    <!-- &lt;html&gt; -->
-    <section class="tag" id="tag-html">
+    <div class="tag">
       <h2>&lt;html&gt;</h2>
-
       <h3>Definition</h3>
       <p>Contains the whole HTML page: the head and the body.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>lang</td><td>Sets the language, for example en for English.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>lang</td><td>Sets the language, for example en for English.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;My first page&lt;/title&gt;
-  &lt;link rel="stylesheet" href="../css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="example-page"&gt;
-  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
-  &lt;p&gt;This is my first web page.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <pre><code>&lt;html lang="en"&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;html&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p>This page is an HTML document with English as its language.</p>
       </div>
-    </section>
+      <p class="note">This is the opening tag already used at the top of this page.</p>
+    </div>
 
-    <!-- &lt;head&gt; -->
-    <section class="tag" id="tag-head">
+    <div class="tag">
       <h2>&lt;head&gt;</h2>
-
       <h3>Definition</h3>
       <p>Contains the page title and other information for the browser.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;My first page&lt;/title&gt;
-  &lt;link rel="stylesheet" href="../css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="example-page"&gt;
-  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
-  &lt;p&gt;This is my first web page.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <pre><code>&lt;head&gt;
+  &lt;title&gt;Home | HTML Review&lt;/title&gt;
+&lt;/head&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;head&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p>Look at the browser tab: Home | HTML Review.</p>
       </div>
-      <p class="note">The head is not displayed as page content.</p>
-    </section>
+      <p class="note">The head is already used at the top of this file. It is not visible page content.</p>
+    </div>
 
-    <!-- &lt;body&gt; -->
-    <section class="tag" id="tag-body">
+    <div class="tag">
       <h2>&lt;body&gt;</h2>
-
       <h3>Definition</h3>
       <p>Contains the content that we see on the page.</p>
 
       <h3>Attributes</h3>
       <table>
-        <thead>
-          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
-          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
-        </tbody>
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+        <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;My first page&lt;/title&gt;
-  &lt;link rel="stylesheet" href="../css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="example-page"&gt;
-  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
-  &lt;p&gt;This is my first web page.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <pre><code>&lt;body&gt;
+  &lt;p&gt;Hello, HTML!&lt;/p&gt;
+&lt;/body&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
-        <iframe src="examples/page.html" title="Example of &lt;body&gt;"></iframe>
-        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+        <p>Hello, HTML!</p>
       </div>
-    </section>
-  </main>
+      <p class="note">This paragraph is inside the body of the current page. A page has only one body.</p>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p>HTML Review · Lab Work 3</p>
