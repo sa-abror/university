@@ -3,276 +3,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Every website begins with a document. Explore the building blocks, then follow the chapters to see HTML in action.">
-  <title>Home &amp; structure | HTML Review</title>
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <title>Home | HTML Review</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
-  <a class="skip-link" href="#main-content">Skip to content</a>
+<body>
+  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="HTML Review home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span><span>HTML<span class="brand-light"> / REVIEW</span></span></a>
-    <div class="header-meta"><span class="lab-label">WEB DEVELOPMENT · LAB 03</span><a class="repository-link" href="https://github.com/sa-abror/university">View repository <span aria-hidden="true">↗</span></a></div>
+    <p class="site-title">HTML Review</p>
+    <p>Lab Work 3 · Web Development</p>
   </header>
-  <div class="site-layout">
-    <aside class="sidebar" aria-label="Course navigation">
-      <div class="sidebar-content">
-        <p class="eyebrow">THE CHAPTERS</p>
-        <nav class="chapter-nav" aria-label="Chapters">
-          <a href="index.html" aria-current="page"><span class="nav-number">01</span>Home &amp; structure</a>
-          <a href="text.html"><span class="nav-number">02</span>Text formatting</a>
-          <a href="links.html"><span class="nav-number">03</span>Links &amp; images</a>
-          <a href="lists.html"><span class="nav-number">04</span>Lists</a>
-          <a href="tables.html"><span class="nav-number">05</span>Tables</a>
-          <a href="forms.html"><span class="nav-number">06</span>Forms</a>
-          <a href="media.html"><span class="nav-number">07</span>Multimedia</a>
-          <a href="semantic.html"><span class="nav-number">08</span>Semantic &amp; layout</a>
-          <a href="metadata.html"><span class="nav-number">09</span>Metadata</a>
-        </nav>
-        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p>Small tags.<br>Endless possibilities.</p><span>A practical HTML reference.</span></div>
-      </div>
-    </aside>
-    <main id="main-content">
-      <div class="page-intro">
-        <p class="eyebrow"><span class="intro-line" aria-hidden="true"></span>CHAPTER 01 / 09 <span class="intro-category">Home &amp; structure</span></p>
-        <h1>Start with the structure.</h1>
-        <p class="intro-description">Every website begins with a document. Explore the building blocks, then follow the chapters to see HTML in action.</p>
-        <div class="chapter-facts"><span>4 tag guides</span><span>Code + live examples</span><span>HTML &amp; CSS</span></div>
-      </div>
-      <section class="overview" aria-labelledby="overview-title">
-        <div class="overview-heading"><h2 id="overview-title">Your HTML field guide</h2><span>9 connected chapters</span></div>
-        <p class="overview-intro">Read the definition. Check the attributes. Compare the code with the result.</p>
-        <div class="chapter-grid">
-          <a class="chapter-card" href="text.html"><span class="chapter-card-number">02 / CHAPTER</span><h3>Text formatting</h3><p>29 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="links.html"><span class="chapter-card-number">03 / CHAPTER</span><h3>Links &amp; images</h3><p>4 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="lists.html"><span class="chapter-card-number">04 / CHAPTER</span><h3>Lists</h3><p>6 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="tables.html"><span class="chapter-card-number">05 / CHAPTER</span><h3>Tables</h3><p>8 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="forms.html"><span class="chapter-card-number">06 / CHAPTER</span><h3>Forms</h3><p>11 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="media.html"><span class="chapter-card-number">07 / CHAPTER</span><h3>Multimedia</h3><p>8 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="semantic.html"><span class="chapter-card-number">08 / CHAPTER</span><h3>Semantic &amp; layout</h3><p>12 tag guides <span aria-hidden="true">↗</span></p></a>
-          <a class="chapter-card" href="metadata.html"><span class="chapter-card-number">09 / CHAPTER</span><h3>Metadata</h3><p>4 tag guides <span aria-hidden="true">↗</span></p></a>
-        </div>
-      </section>
-      <nav class="on-this-page" aria-label="Tags on this page">
-        <p class="section-label">In this chapter</p>
-        <div class="tag-links">
-          <a href="#tag-doctype"><code>&lt;!DOCTYPE html&gt;</code></a>
-          <a href="#tag-html"><code>&lt;html&gt;</code></a>
-          <a href="#tag-head"><code>&lt;head&gt;</code></a>
-          <a href="#tag-body"><code>&lt;body&gt;</code></a>
-        </div>
-      </nav>
-      <article class="tag-card" id="tag-doctype">
-        <div class="tag-heading"><h2><code>&lt;!DOCTYPE html&gt;</code></h2><span class="tag-number">01</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">The doctype declaration tells the browser to use modern standards mode. It is a declaration, rather than an HTML element, and belongs before the root element.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;!DOCTYPE html&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>None</code></td><td>The HTML doctype has no attributes.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-doctype">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;An HTML document&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;h1&gt;Hello, HTML.&lt;/h1&gt;
-  &lt;p&gt;This is a complete document.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-doctype">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;!DOCTYPE html&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;An HTML document&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;h1&gt;Hello, HTML.&lt;/h1&gt;
-  &lt;p&gt;This is a complete document.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-        <p class="example-note">The declaration is not visible; the browser renders the document that follows it.</p>
-      </article>
 
-      <article class="tag-card" id="tag-html">
-        <div class="tag-heading"><h2><code>&lt;html&gt;</code></h2><span class="tag-number">02</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">The root element contains the document head and body. Its language helps browsers and assistive technology interpret the page.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;html&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>lang</code></td><td>The language of the document, such as en.</td></tr>
-              <tr><td><code>dir</code></td><td>Text direction: ltr, rtl or auto.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-html">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en" dir="ltr"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;An HTML document&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;p&gt;This document is written in English.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-html">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;html&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;An HTML document&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;p&gt;This document is written in English.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-      </article>
+  <nav class="menu" aria-label="Main menu">
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="text.html">Text</a>
+    <a href="links.html">Links &amp; images</a>
+    <a href="lists.html">Lists</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="media.html">Media</a>
+    <a href="semantic.html">Semantic</a>
+    <a href="metadata.html">Metadata</a>
+  </nav>
 
-      <article class="tag-card" id="tag-head">
-        <div class="tag-heading"><h2><code>&lt;head&gt;</code></h2><span class="tag-number">03</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">Contains document metadata, including its title and links to resources. Content in the head is not the visible page body.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;head&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
-              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-head">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
+  <main class="content">
+    <div class="intro">
+      <h1>HTML Review</h1>
+      <p>This website explains the main HTML tags. Choose a topic from the menu and try the examples.</p>
+      <p>Each tag has a definition, an attributes table, example code and its result.</p>
+    </div>
+
+    <!-- &lt;!DOCTYPE html&gt; -->
+    <section class="tag" id="tag-doctype">
+      <h2>&lt;!DOCTYPE html&gt;</h2>
+
+      <h3>Definition</h3>
+      <p>Tells the browser that this is a modern HTML document. It is a declaration, not a tag.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>None</td><td>This declaration has no attributes.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
   &lt;title&gt;My first page&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
+  &lt;link rel="stylesheet" href="../css/style.css"&gt;
 &lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;p&gt;The title and stylesheet are set in the head.&lt;/p&gt;
+&lt;body class="example-page"&gt;
+  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+  &lt;p&gt;This is my first web page.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-head">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;head&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;My first page&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;p&gt;The title and stylesheet are set in the head.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-        <p class="example-note">The framed document has its own head. Its title is used as document metadata, not as a visible heading.</p>
-      </article>
 
-      <article class="tag-card" id="tag-body">
-        <div class="tag-heading"><h2><code>&lt;body&gt;</code></h2><span class="tag-number">04</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">Contains the content displayed in the browser, including headings, paragraphs, images and forms.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;body&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>id</code></td><td>A unique identifier, also used as a link destination.</td></tr>
-              <tr><td><code>class</code></td><td>One or more class names that CSS can select.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-body">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;!DOCTYPE html&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+      </div>
+      <p class="note">The doctype is the first line. It does not show any text on the page.</p>
+    </section>
+
+    <!-- &lt;html&gt; -->
+    <section class="tag" id="tag-html">
+      <h2>&lt;html&gt;</h2>
+
+      <h3>Definition</h3>
+      <p>Contains the whole HTML page: the head and the body.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>lang</td><td>Sets the language, for example en for English.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;An HTML document&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
+  &lt;title&gt;My first page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="../css/style.css"&gt;
 &lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;h1&gt;Inside the body&lt;/h1&gt;
-  &lt;p&gt;This is the visible page content.&lt;/p&gt;
+&lt;body class="example-page"&gt;
+  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+  &lt;p&gt;This is my first web page.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-body">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;body&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;html&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+      </div>
+    </section>
+
+    <!-- &lt;head&gt; -->
+    <section class="tag" id="tag-head">
+      <h2>&lt;head&gt;</h2>
+
+      <h3>Definition</h3>
+      <p>Contains the page title and other information for the browser.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;An HTML document&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;My first page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="../css/style.css"&gt;
 &lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;h1&gt;Inside the body&lt;/h1&gt;
-  &lt;p&gt;This is the visible page content.&lt;/p&gt;
+&lt;body class="example-page"&gt;
+  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+  &lt;p&gt;This is my first web page.&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-      </article>
-      <nav class="chapter-pager" aria-label="Previous and next chapters"><a href="#top"><span>Back to top ↑</span>Home &amp; structure</a><a href="text.html"><span>Next chapter →</span>Text formatting</a></nav>
-    </main>
-  </div>
-  <footer class="site-footer"><p><strong>HTML / REVIEW</strong><span>Lab Work 3 · University web development</span></p><a href="#top">Back to top ↑</a></footer>
+&lt;/html&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;head&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+      </div>
+      <p class="note">The head is not displayed as page content.</p>
+    </section>
+
+    <!-- &lt;body&gt; -->
+    <section class="tag" id="tag-body">
+      <h2>&lt;body&gt;</h2>
+
+      <h3>Definition</h3>
+      <p>Contains the content that we see on the page.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>id</td><td>Gives the element a unique name.</td></tr>
+          <tr><td>class</td><td>Connects the element to a CSS class.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;My first page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="../css/style.css"&gt;
+&lt;/head&gt;
+&lt;body class="example-page"&gt;
+  &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+  &lt;p&gt;This is my first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;body&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>HTML Review · Lab Work 3</p>
+    <a href="https://github.com/sa-abror/university">GitHub repository</a>
+  </footer>
 </body>
 </html>

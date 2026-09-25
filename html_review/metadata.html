@@ -3,275 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Titles, character encoding and resource links describe a document to the browser before its content appears.">
   <title>Metadata | HTML Review</title>
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
-  <a class="skip-link" href="#main-content">Skip to content</a>
+<body>
+  <!-- The same header and menu are used on every page. -->
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="HTML Review home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span><span>HTML<span class="brand-light"> / REVIEW</span></span></a>
-    <div class="header-meta"><span class="lab-label">WEB DEVELOPMENT · LAB 03</span><a class="repository-link" href="https://github.com/sa-abror/university">View repository <span aria-hidden="true">↗</span></a></div>
+    <p class="site-title">HTML Review</p>
+    <p>Lab Work 3 · Web Development</p>
   </header>
-  <div class="site-layout">
-    <aside class="sidebar" aria-label="Course navigation">
-      <div class="sidebar-content">
-        <p class="eyebrow">THE CHAPTERS</p>
-        <nav class="chapter-nav" aria-label="Chapters">
-          <a href="index.html"><span class="nav-number">01</span>Home &amp; structure</a>
-          <a href="text.html"><span class="nav-number">02</span>Text formatting</a>
-          <a href="links.html"><span class="nav-number">03</span>Links &amp; images</a>
-          <a href="lists.html"><span class="nav-number">04</span>Lists</a>
-          <a href="tables.html"><span class="nav-number">05</span>Tables</a>
-          <a href="forms.html"><span class="nav-number">06</span>Forms</a>
-          <a href="media.html"><span class="nav-number">07</span>Multimedia</a>
-          <a href="semantic.html"><span class="nav-number">08</span>Semantic &amp; layout</a>
-          <a href="metadata.html" aria-current="page"><span class="nav-number">09</span>Metadata</a>
-        </nav>
-        <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><p>Small tags.<br>Endless possibilities.</p><span>A practical HTML reference.</span></div>
+
+  <nav class="menu" aria-label="Main menu">
+    <a href="index.html">Home</a>
+    <a href="text.html">Text</a>
+    <a href="links.html">Links &amp; images</a>
+    <a href="lists.html">Lists</a>
+    <a href="tables.html">Tables</a>
+    <a href="forms.html">Forms</a>
+    <a href="media.html">Media</a>
+    <a href="semantic.html">Semantic</a>
+    <a href="metadata.html" class="active" aria-current="page">Metadata</a>
+  </nav>
+
+  <main class="content">
+    <div class="intro">
+      <h1>Page metadata</h1>
+      <p>Metadata gives the browser information about the page.</p>
+    </div>
+
+    <!-- &lt;title&gt; -->
+    <section class="tag" id="tag-title">
+      <h2>&lt;title&gt;</h2>
+
+      <h3>Definition</h3>
+      <p>Sets the text shown on the browser tab. It goes inside head.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>None required</td><td>A title works without any attributes.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;title&gt;My first page&lt;/title&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;title&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
       </div>
-    </aside>
-    <main id="main-content">
-      <div class="page-intro">
-        <p class="eyebrow"><span class="intro-line" aria-hidden="true"></span>CHAPTER 09 / 09 <span class="intro-category">Metadata</span></p>
-        <h1>Behind every good page.</h1>
-        <p class="intro-description">Titles, character encoding and resource links describe a document to the browser before its content appears.</p>
-        <div class="chapter-facts"><span>4 tag guides</span><span>Code + live examples</span><span>HTML &amp; CSS</span></div>
+      <p class="note">The title is not a heading. Open the example page to see its title on the browser tab.</p>
+    </section>
+
+    <!-- &lt;meta&gt; -->
+    <section class="tag" id="tag-meta">
+      <h2>&lt;meta&gt;</h2>
+
+      <h3>Definition</h3>
+      <p>Gives the browser information such as character encoding and screen settings.</p>
+
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>charset</td><td>UTF-8 supports text in different languages.</td></tr>
+          <tr><td>name</td><td>The setting name, for example viewport.</td></tr>
+          <tr><td>content</td><td>The value of the setting.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;meta&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
       </div>
-      <nav class="on-this-page" aria-label="Tags on this page">
-        <p class="section-label">In this chapter</p>
-        <div class="tag-links">
-          <a href="#tag-title"><code>&lt;title&gt;</code></a>
-          <a href="#tag-meta"><code>&lt;meta&gt;</code></a>
-          <a href="#tag-link"><code>&lt;link&gt;</code></a>
-          <a href="#tag-base"><code>&lt;base&gt;</code></a>
-        </div>
-      </nav>
-      <article class="tag-card" id="tag-title">
-        <div class="tag-heading"><h2><code>&lt;title&gt;</code></h2><span class="tag-number">01</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">Sets the document title used by a browser tab, history and bookmarks. It belongs in head and contains plain text.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;title&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>lang</code></td><td>Overrides the language of the title text if necessary.</td></tr>
-              <tr><td><code>dir</code></td><td>Specifies text direction.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-title">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;My HTML notebook&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;h1&gt;A page with a title&lt;/h1&gt;
-  &lt;p&gt;The document title is “My HTML notebook”.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-title">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;title&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;My HTML notebook&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;h1&gt;A page with a title&lt;/h1&gt;
-  &lt;p&gt;The document title is “My HTML notebook”.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-        <p class="example-note">title does not paint a heading. This frame has its own document title; the parent browser tab keeps “Metadata | HTML Review”.</p>
-      </article>
+      <p class="note">These tags do not show text. They help the browser display the page correctly.</p>
+    </section>
 
-      <article class="tag-card" id="tag-meta">
-        <div class="tag-heading"><h2><code>&lt;meta&gt;</code></h2><span class="tag-number">02</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">Supplies metadata such as character encoding, a description and viewport settings. This void element belongs in head.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;meta&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>charset</code></td><td>Declares UTF-8 character encoding.</td></tr>
-              <tr><td><code>name</code></td><td>The metadata name, such as description or viewport.</td></tr>
-              <tr><td><code>content</code></td><td>The value for a named metadata entry.</td></tr>
-              <tr><td><code>http-equiv</code></td><td>A supported document processing directive.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-meta">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;Metadata example&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
-  &lt;meta name="description" content="An HTML metadata example."&gt;
-&lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;h1&gt;Characters, correctly displayed&lt;/h1&gt;
-  &lt;p&gt;UTF-8: café · Привет · Salom&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-meta">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;meta&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;Metadata example&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;An HTML metadata example.&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;h1&gt;Characters, correctly displayed&lt;/h1&gt;
-  &lt;p&gt;UTF-8: café · Привет · Salom&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-        <p class="example-note">Metadata is not visible by itself. The result shows UTF-8 text; the viewport declaration supports mobile layouts.</p>
-      </article>
+    <!-- &lt;link&gt; -->
+    <section class="tag" id="tag-link">
+      <h2>&lt;link&gt;</h2>
 
-      <article class="tag-card" id="tag-link">
-        <div class="tag-heading"><h2><code>&lt;link&gt;</code></h2><span class="tag-number">03</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">Describes a relationship to another resource, such as a stylesheet or icon. A stylesheet link loads external CSS.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;link&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>rel</code></td><td>The relationship, such as stylesheet or icon.</td></tr>
-              <tr><td><code>href</code></td><td>The resource URL.</td></tr>
-              <tr><td><code>media</code></td><td>A media query restricting when a stylesheet applies.</td></tr>
-              <tr><td><code>type</code></td><td>A MIME-type hint for the resource.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-link">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;Linked CSS example&lt;/title&gt;
-  &lt;link rel="stylesheet" href="css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;h1&gt;One shared stylesheet&lt;/h1&gt;
-  &lt;p class="demo-box"&gt;This box uses css/style.css.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-link">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;link&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;Linked CSS example&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;h1&gt;One shared stylesheet&lt;/h1&gt;
-  &lt;p class=&quot;demo-box&quot;&gt;This box uses css/style.css.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-        <p class="example-note">The link itself has no visible content. The box demonstrates the styles loaded from the same external CSS file as every chapter.</p>
-      </article>
+      <h3>Definition</h3>
+      <p>Connects the page to a file such as an external stylesheet.</p>
 
-      <article class="tag-card" id="tag-base">
-        <div class="tag-heading"><h2><code>&lt;base&gt;</code></h2><span class="tag-number">04</span></div>
-        <h3 class="section-label">Definition</h3>
-        <p class="definition">Sets the base URL for relative links in a document. Use at most one base element, before elements with relative URLs.</p>
-        <h3 class="section-label">Attributes</h3>
-        <div class="table-scroll">
-          <table class="attributes">
-            <caption class="visually-hidden">Attributes of &lt;base&gt;</caption>
-            <thead><tr><th scope="col">Attribute</th><th scope="col">Role</th></tr></thead>
-            <tbody>
-              <tr><td><code>href</code></td><td>The base URL used to resolve relative references.</td></tr>
-              <tr><td><code>target</code></td><td>The default browsing context for links and forms.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="example-pair">
-          <div class="code-panel">
-            <h3 class="panel-label" id="code-base">Example <span>HTML code</span></h3>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;Base URL example&lt;/title&gt;
-  &lt;base href="images/"&gt;
-  &lt;link rel="stylesheet" href="../css/style.css"&gt;
-&lt;/head&gt;
-&lt;body class="document-example"&gt;
-  &lt;img src="study-desk.svg" alt="A laptop, book and plant" width="640" height="400"&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </div>
-          <div class="result-panel">
-            <h3 class="panel-label" id="result-base">Result <span>Live preview</span></h3>
-            <div class="demo">
-<iframe class="document-frame" title="Result of &lt;base&gt;" sandbox srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-  &lt;title&gt;Base URL example&lt;/title&gt;
-  &lt;base href=&quot;images/&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body class=&quot;document-example&quot;&gt;
-  &lt;img src=&quot;study-desk.svg&quot; alt=&quot;A laptop, book and plant&quot; width=&quot;640&quot; height=&quot;400&quot;&gt;
-&lt;/body&gt;
-&lt;/html&gt;"></iframe>
-            </div>
-          </div>
-        </div>
-        <p class="example-note">The image resolves to images/study-desk.svg. This isolated frame keeps the base URL from changing links on the review page.</p>
-      </article>
-      <nav class="chapter-pager" aria-label="Previous and next chapters"><a href="semantic.html"><span>← Previous chapter</span>Semantic &amp; layout</a><a href="index.html"><span>Review from the beginning ↗</span>Home &amp; structure</a></nav>
-    </main>
-  </div>
-  <footer class="site-footer"><p><strong>HTML / REVIEW</strong><span>Lab Work 3 · University web development</span></p><a href="#top">Back to top ↑</a></footer>
+      <h3>Attributes</h3>
+      <table>
+        <thead>
+          <tr><th scope="col">Attribute</th><th scope="col">Role</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>rel</td><td>Use stylesheet to connect a CSS file.</td></tr>
+          <tr><td>href</td><td>The path to that file.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Example (code)</h3>
+      <pre><code>&lt;link rel="stylesheet" href="../css/style.css"&gt;</code></pre>
+
+      <h3>Example (result)</h3>
+      <div class="result">
+        <iframe src="examples/page.html" title="Example of &lt;link&gt;"></iframe>
+        <p><a href="examples/page.html" target="_blank" rel="noopener">Open the example page</a></p>
+      </div>
+      <p class="note">The example is in the examples folder, so ../ goes up one folder to find css/style.css.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>HTML Review · Lab Work 3</p>
+    <a href="https://github.com/sa-abror/university">GitHub repository</a>
+  </footer>
 </body>
 </html>
