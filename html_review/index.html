@@ -8,8 +8,8 @@
 </head>
 <body>
   <header class="site-header">
-    <p class="site-title">HTML Review</p>
-    <p>Lab Work 3</p>
+    <a class="site-title" href="index.html"><span class="logo-mark">&lt;/&gt;</span> HTML Review</a>
+    <p class="site-label">LEARN. BUILD. REPEAT. <span>LAB 03</span></p>
   </header>
 
   <nav class="menu">
@@ -25,9 +25,49 @@
   </nav>
 
   <div class="content">
-    <h1>HTML Review</h1>
-    <p>This website explains the main HTML tags. Choose a topic from the menu and try the examples.</p>
-    <p>For each tag, read the definition, check the attributes, and compare the code with the result.</p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> YOUR HTML FIELD GUIDE</p>
+        <h1>A little code.<br><span>A world<br>of ideas.</span></h1>
+        <p class="hero-description">Every website starts with a few tags. Learn what they do, explore the code, and see it come to life.</p>
+        <div class="hero-actions">
+          <a class="button-link" href="#basics">Explore the tags <span>↗</span></a>
+          <a class="text-link" href="text.html">Start with text →</a>
+        </div>
+        <div class="hero-stats">
+          <p><strong>09</strong> chapters</p>
+          <p><strong>47</strong> tag guides</p>
+        </div>
+      </div>
+
+      <div class="hero-editor">
+        <div class="editor-bar">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <p>my-first-page.html</p>
+        </div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+<span class="code-accent">&lt;html</span> lang=<span class="code-warm">"en"</span><span class="code-accent">&gt;</span>
+  &lt;head&gt;
+    &lt;title&gt;My first website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    <span class="code-accent">&lt;p&gt;</span><span class="code-warm">Hello, world.</span><span class="code-accent">&lt;/p&gt;</span>
+  &lt;/body&gt;
+<span class="code-accent">&lt;/html&gt;</span></code></pre>
+        <div class="editor-preview">
+          <span>THE RESULT</span>
+          <p>Hello, world.<span class="cursor"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="chapter-heading" id="basics">
+      <div>
+        <p class="eyebrow">CHAPTER 01 / 09</p>
+        <h2>Start with the foundations.</h2>
+      </div>
+      <p>Read the definition. Explore the code.<br>See the result.</p>
+    </div>
 
     <div class="tag">
       <h2>&lt;!DOCTYPE html&gt;</h2>
@@ -130,8 +170,16 @@
   </div>
 
   <footer class="site-footer">
-    <p>HTML Review · Lab Work 3</p>
-    <a href="https://github.com/sa-abror/university">GitHub repository</a>
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">HTML Review<span>.</span></p>
+        <p class="footer-note">A little code. A world of ideas. · Lab Work 3</p>
+      </div>
+      <div class="footer-credits">
+        <p class="authors">Made by Abrorbek and Zebiniso</p>
+        <a href="https://github.com/sa-abror/university">View on GitHub ↗</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
