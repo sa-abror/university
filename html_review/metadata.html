@@ -59,16 +59,19 @@
       <table>
         <tr><th>Attribute</th><th>Role</th></tr>
         <tr><td>charset</td><td>UTF-8 supports text in different languages.</td></tr>
+        <tr><td>name</td><td>The name of a setting, such as viewport.</td></tr>
+        <tr><td>content</td><td>The value of that setting.</td></tr>
       </table>
 
       <h3>Example (code)</h3>
-      <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+      <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
 
       <h3>Example (result)</h3>
       <div class="result">
         <p>Hello! Salom! Привет!</p>
       </div>
-      <p class="note">This meta tag is already in the head. The text above uses UTF-8; the tag itself is not visible.</p>
+      <p class="note">Both tags are already in the head. UTF-8 supports the text above, and viewport helps the page fit a phone screen. The tags themselves are not visible.</p>
     </div>
 
     <div class="tag">
